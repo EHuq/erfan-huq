@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.e-card {
+  margin: 20px;
+}
+
+.box-pic-text {
+  width: "80%";
+  margin: "0 auto";
+}
+
+.description {
+  margin: "-100px 0 100px 125px";
+  text-align: "left";
+  box-shadow: "0px 3px 0px 15px deeppink, 46px -20px 0px 26px black";
+  padding: "1rem";
+}
+
+.e-card-info {
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.e-card-title {
+  color: #777777;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0px;
+}
+
+.e-card-title:hover {
+  text-decoration: none;
+  color: #ffa600;
+}
+
+.e-card-sub-title {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* z-index: -1; */
+}
+
+.aboutMe {
+  min-height: calc(100vh - 162px);
+}
+
+.contacts {
+  min-height: calc(100vh - 162px);
+}
+
+.points {
+  color: #777777;
+  font-size: 18px;
+}
+
+.linkedCircles {
+  color: #27003c;
+  text-decoration: none;
+  margin: 0px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.linkedCircles:hover {
+  color: #ffa600;
+  text-decoration: none;
+}
+
+.home-alt {
+  text-decoration: none;
+  color: black;
+}
+
+.home-alt:hover {
+  text-decoration: none;
+  color: #ffa600;
+}
+
+.button {
+  position: relative;
+  background-color: #ffa600;
+  border-radius: 7px 7px;
+  border-color: #27003c;
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-bottom: -100px;
+  width: 150px;
+}
+
+.button:hover {
+  background-color: #27003c;
+}
+
+.link {
+  text-decoration: none;
+  color: #27003c;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button:hover .link {
+  text-decoration: none;
+  color: #ffa600;
+}
+
+@media only screen and (min-width: 1945px) {
+  .points {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .points {
+    color: #ffa600;
+  }
+}
