@@ -61,21 +61,59 @@ class Contacts extends React.Component {
       <div className="contacts">
         <Summary title={this.props.title} />
 
-        <form name="contact" netlify>
-          <p>
-            <label>
-              Name <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Email <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+        <Content>
+          <Form /* onSubmit={this.handleSubmit} */ netlify>
+            <Form.Group>
+              <Form.Label htmlFor="full-name">Full name</Form.Label>
+              <Form.Control
+                id="full-name"
+                name="name"
+                type="text"
+                // value={this.state.name}
+                // onChange={this.handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Label htmlFor="email">Email</Form.Label>
+              <Form.Control
+                id="email"
+                name="email"
+                type="email"
+                // value={this.state.email}
+                // onChange={this.handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Label htmlFor="message">Message</Form.Label>
+              <Form.Control
+                id="message"
+                name="message"
+                as="textarea"
+                rows="3"
+                // value={this.state.message}
+                // onChange={this.handleChange}
+              />
+            </Form.Group>
+
+            <Button
+              className="d-inline-block"
+              variant="primary"
+              type="submit"
+              disable={this.state.disabled}
+            >
+              Send
+            </Button>
+
+            {/* {this.state.emailSent == true && (
+              <p className="d-inline success-msg">Email Sent</p>
+            )}
+            {this.state.emailSent == false && (
+              <p className="d-inline err-msg">Email Did Not Send</p>
+            )} */}
+          </Form>
+        </Content>
       </div>
     );
   }
