@@ -61,7 +61,7 @@ class Contacts extends React.Component {
       <div className="contacts">
         <Summary title={this.props.title} />
 
-        <form name="contact" netlify>
+        <form name="contact" method="POST" data-netlify="true">
           <p>
             <label>
               Name <input id="full-name" type="text" name="name" />
