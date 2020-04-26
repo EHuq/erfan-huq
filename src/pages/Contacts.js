@@ -12,49 +12,49 @@ class Contacts extends React.Component {
       email: "",
       message: "",
       disabled: false,
-      emailSent: null
+      emailSent: null,
     };
   }
 
-  handleChange = event => {
-    const target = event.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
-    const name = target.name;
+  // handleChange = event => {
+  //   const target = event.target;
+  //   const value = target.type === "checkbox" ? target.checked : target.value;
+  //   const name = target.name;
 
-    this.setState({
-      [name]: value
-    });
-  };
+  //   this.setState({
+  //     [name]: value
+  //   });
+  // };
 
-  handleSubmit = event => {
-    event.preventDefault();
+  // handleSubmit = event => {
+  //   event.preventDefault();
 
-    this.setState({
-      disable: true
-    });
+  //   this.setState({
+  //     disable: true
+  //   });
 
-    Axios.post("http://localhost:3030/api/email", this.state)
-      .then(res => {
-        if (res.data.success) {
-          this.setState({
-            disabled: false,
-            emailSent: true
-          });
-        } else {
-          this.setState({
-            disabled: false,
-            emailSent: false
-          });
-        }
-      })
+  //   Axios.post("http://localhost:3030/api/email", this.state)
+  //     .then(res => {
+  //       if (res.data.success) {
+  //         this.setState({
+  //           disabled: false,
+  //           emailSent: true
+  //         });
+  //       } else {
+  //         this.setState({
+  //           disabled: false,
+  //           emailSent: false
+  //         });
+  //       }
+  //     })
 
-      .catch(err => {
-        this.setState({
-          disabled: false,
-          emailSent: false
-        });
-      });
-  };
+  //     .catch(err => {
+  //       this.setState({
+  //         disabled: false,
+  //         emailSent: false
+  //       });
+  //     });
+  // };
 
   render() {
     return (
@@ -62,15 +62,15 @@ class Contacts extends React.Component {
         <Summary title={this.props.title} />
 
         <Content>
-          <Form onSubmit={this.handleSubmit}>
+          <Form /* onSubmit={this.handleSubmit} */ netlify>
             <Form.Group>
               <Form.Label htmlFor="full-name">Full name</Form.Label>
               <Form.Control
                 id="full-name"
                 name="name"
                 type="text"
-                value={this.state.name}
-                onChange={this.handleChange}
+                // value={this.state.name}
+                // onChange={this.handleChange}
               />
             </Form.Group>
 
@@ -80,8 +80,8 @@ class Contacts extends React.Component {
                 id="email"
                 name="email"
                 type="email"
-                value={this.state.email}
-                onChange={this.handleChange}
+                // value={this.state.email}
+                // onChange={this.handleChange}
               />
             </Form.Group>
 
@@ -92,8 +92,8 @@ class Contacts extends React.Component {
                 name="message"
                 as="textarea"
                 rows="3"
-                value={this.state.message}
-                onChange={this.handleChange}
+                // value={this.state.message}
+                // onChange={this.handleChange}
               />
             </Form.Group>
 
@@ -106,12 +106,12 @@ class Contacts extends React.Component {
               Send
             </Button>
 
-            {this.state.emailSent == true && (
+            {/* {this.state.emailSent == true && (
               <p className="d-inline success-msg">Email Sent</p>
             )}
             {this.state.emailSent == false && (
               <p className="d-inline err-msg">Email Did Not Send</p>
-            )}
+            )} */}
           </Form>
         </Content>
       </div>
