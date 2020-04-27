@@ -132,8 +132,8 @@ code {
 
 .spikes {
   position: relative;
-  background: #2c3e50;
-  height: 50vh;
+  background: #27003c;
+  height: 10px;
 }
 
 .spikes::after {
@@ -144,10 +144,10 @@ code {
   top: 100%;
   z-index: 10;
   display: block;
-  height: 20px;
+  height: 10px;
   background-size: 20px 100%;
-  background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%),
-    linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+  background-image: linear-gradient(135deg, #27003c 25%, transparent 25%),
+    linear-gradient(225deg, #27003c 25%, transparent 25%);
   background-position: 0%;
 }
 
