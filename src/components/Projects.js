@@ -85,7 +85,7 @@ class Projects extends React.Component {
     return (
       <div
         style={{
-          fontFamily: "sans-serif",
+          fontFamily: "Poppins-Medium",
           textAlign: "center",
         }}
       >
