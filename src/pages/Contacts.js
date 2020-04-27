@@ -33,29 +33,6 @@ class Contacts extends React.Component {
   //     disable: true,
   //   });
 
-  //   Axios.post("http://localhost:3030/api/email", this.state)
-  //     .then((res) => {
-  //       if (res.data.success) {
-  //         this.setState({
-  //           disabled: false,
-  //           emailSent: true,
-  //         });
-  //       } else {
-  //         this.setState({
-  //           disabled: false,
-  //           emailSent: false,
-  //         });
-  //       }
-  //     })
-
-  //     .catch((err) => {
-  //       this.setState({
-  //         disabled: false,
-  //         emailSent: false,
-  //       });
-  //     });
-  // };
-
   render() {
     return (
       <div className="contacts">
@@ -69,11 +46,17 @@ class Contacts extends React.Component {
                 Name <input type="text" name="name" />
               </label>
             </p>
-            <p>
+
+            <Form.Group>
+              <Form.Label htmlFor="email">Email</Form.Label>
+              <Form.Control id="email" name="email" type="email" />
+            </Form.Group>
+
+            {/* <p>
               <label>
                 Email <input type="email" name="email" />
               </label>
-            </p>
+            </p> */}
             <p>
               <label>
                 Message <textarea name="message"></textarea>
