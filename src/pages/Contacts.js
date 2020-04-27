@@ -41,11 +41,17 @@ class Contacts extends React.Component {
         <Content className="contacts">
           <form name="contact" method="post">
             <input type="hidden" name="form-name" value="contact" />
-            <p>
+
+            <Form.Group>
+              <Form.Label htmlFor="full-name">Full name</Form.Label>
+              <Form.Control id="full-name" name="name" type="text" />
+            </Form.Group>
+
+            {/* <p>
               <label>
                 Name <input type="text" name="name" />
               </label>
-            </p>
+            </p> */}
 
             <Form.Group>
               <Form.Label htmlFor="email">Email</Form.Label>
@@ -57,14 +63,36 @@ class Contacts extends React.Component {
                 Email <input type="email" name="email" />
               </label>
             </p> */}
-            <p>
+
+            <Form.Group>
+              <Form.Label htmlFor="message">Message</Form.Label>
+              <Form.Control
+                id="message"
+                name="message"
+                as="textarea"
+                rows="3"
+                // value={this.state.message}
+                // onChange={this.handleChange}
+              />
+            </Form.Group>
+
+            <Button
+              className="d-inline-block"
+              variant="primary"
+              type="submit"
+              disable={this.state.disabled}
+            >
+              Send
+            </Button>
+
+            {/* <p>
               <label>
                 Message <textarea name="message"></textarea>
               </label>
             </p>
             <p>
               <button type="submit">Send</button>
-            </p>
+            </p> */}
           </form>
         </Content>
       </div>
