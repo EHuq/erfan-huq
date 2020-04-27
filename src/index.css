@@ -20,6 +20,7 @@ code {
 
 .e-card {
   margin: 20px;
+  font-family: "Poppins-Medium";
 }
 
 .box-pic-text {
@@ -38,6 +39,7 @@ code {
 .e-card-info {
   margin-top: 10px;
   min-height: 100px;
+  font-family: "Poppins-Medium";
 }
 
 .e-card-title {
@@ -56,6 +58,7 @@ code {
 .e-card-sub-title {
   font-size: 16px;
   margin: 0px;
+  font-family: "Poppins-Medium";
 }
 
 .success-msg {
@@ -72,20 +75,24 @@ code {
   position: relative;
   bottom: 0;
   width: 100%;
+  font-family: "Poppins-Medium";
   /* z-index: -1; */
 }
 
 .aboutMe {
   min-height: calc(100vh - 162px);
+  font-family: "Poppins-Medium";
 }
 
 .contacts {
   min-height: calc(100vh - 162px);
+  font-family: "Poppins-Medium";
 }
 
 .points {
   color: #777777;
   font-size: 18px;
+  font-family: "Poppins-Medium";
 }
 
 .linkedCircles {
@@ -104,6 +111,7 @@ code {
 .home-alt {
   text-decoration: none;
   color: black;
+  font-family: "Poppins-Medium";
 }
 
 .home-alt:hover {
@@ -120,6 +128,7 @@ code {
   margin-right: 15px;
   margin-bottom: -100px;
   width: 150px;
+  font-family: "Poppins-Medium";
 }
 
 .button:hover {
