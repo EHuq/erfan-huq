@@ -87,6 +87,7 @@ class Projects extends React.Component {
         style={{
           fontFamily: "sans-serif",
           textAlign: "center",
+          backgroundColor: "#ffa600",
         }}
       >
         <div style={styles.container}>
