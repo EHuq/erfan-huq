@@ -33,7 +33,6 @@ code {
   box-shadow: "0px 3px 0px 15px deeppink, 46px -20px 0px 26px black";
   padding: "1rem";
   font-family: "Poppins-Medium";
-  font-weight: lighter;
 }
 
 .e-card-info {
@@ -47,7 +46,6 @@ code {
   font-size: 24px;
   margin: 0px;
   font-family: "Poppins-Medium";
-  font-weight: lighter;
 }
 
 .e-card-title:hover {
