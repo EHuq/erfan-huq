@@ -17,7 +17,6 @@ function Home(props) {
         links={true}
       />
       <AboutMe />
-      <section class="spikes"></section>
       <Projects />
     </div>
   );
