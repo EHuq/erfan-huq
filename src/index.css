@@ -133,7 +133,8 @@ code {
 .spikes {
   position: relative;
   background: #27003c;
-  height: 10px;
+  height: 15px;
+  margin-bottom: 10px;
 }
 
 .spikes::after {
