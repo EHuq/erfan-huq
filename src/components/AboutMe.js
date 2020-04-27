@@ -15,7 +15,7 @@ class AboutMe extends React.Component {
     return (
       <div
         style={{
-          fontFamily: "sans-serif",
+          fontFamily: "Poppins-Medium",
           textAlign: "center",
           backgroundColor: "#28023D",
           paddingBottom: "1px",
