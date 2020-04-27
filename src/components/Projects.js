@@ -88,7 +88,6 @@ class Projects extends React.Component {
           fontFamily: "sans-serif",
           textAlign: "center",
           backgroundColor: "#ffa600",
-          height: "100px",
         }}
       >
         <div style={styles.container}>
