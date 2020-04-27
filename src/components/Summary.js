@@ -6,7 +6,7 @@ function Summary(props) {
   return (
     <Jumbotron
       className="bg-transparent jumbotron-fluid"
-      style={{ width: "100%" }}
+      style={{ width: "100%", fontFamily: "Poppins-Medium" }}
     >
       <Container fluid={true}>
         <Row className="justify-content-center" style={{ width: "100%" }}>
