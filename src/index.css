@@ -130,29 +130,6 @@ code {
   color: #ffa600;
 }
 
-.spikes {
-  position: relative;
-  background: #27003c;
-  height: 15px;
-  margin-bottom: 10px;
-}
-
-.spikes::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 100%;
-  z-index: 10;
-  display: block;
-  height: 15px;
-  background-size: 15px 100%;
-  background-image: linear-gradient(135deg, #27003c 25%, transparent 25%),
-    linear-gradient(225deg, #27003c 25%, transparent 25%);
-  background-position: 0%;
-  margin-bottom: 15px;
-}
-
 @media only screen and (min-width: 1945px) {
   .points {
     font-size: 24px;
