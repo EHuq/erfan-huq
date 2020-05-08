@@ -16,22 +16,6 @@ class Contacts extends React.Component {
     };
   }
 
-  // handleChange = (event) => {
-  //   const target = event.target;
-  //   const value = target.type === "checkbox" ? target.checked : target.value;
-  //   const name = target.name;
-
-  //   this.setState({
-  //     [name]: value,
-  //   });
-  // };
-
-  // handleSubmit = (event) => {
-  //   event.preventDefault();
-
-  //   this.setState({
-  //     disable: true,
-  //   });
 
   render() {
     return (
@@ -71,8 +55,8 @@ class Contacts extends React.Component {
                 name="message"
                 as="textarea"
                 rows="3"
-                // value={this.state.message}
-                // onChange={this.handleChange}
+              // value={this.state.message}
+              // onChange={this.handleChange}
               />
             </Form.Group>
 

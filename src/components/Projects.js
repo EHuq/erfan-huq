@@ -12,6 +12,23 @@ class Projects extends React.Component {
       items: [
         {
           id: 0,
+          title: "COVID-19 Tracker",
+          // imgSrc: sortingVisualizer,
+          link: "https://erfans-covid-tracker.netlify.app",
+          selected: false,
+          resume: [
+            <li className="points">
+              Built site using <b>React</b> to track the statistics related
+                to the Coronavirus epidemic
+            </li>,
+            <li className="points">
+              Utilized an API to fetch coronavirus data, and
+              Material-UI to create visualizations of said data
+            </li>,
+          ],
+        },
+        {
+          id: 1,
           title: "Sorting Algorithms Visualizer",
           // imgSrc: sortingVisualizer,
           link: "https://github.com/EHuq/SortingAlgorithmVisualizer",
@@ -24,7 +41,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 1,
+          id: 2,
           title: "Maze Solver",
           // imgSrc: mazeSolver,
           link: "https://github.com/EHuq/MazeSolver",
@@ -37,7 +54,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 2,
+          id: 3,
           title: "Snake Game",
           // imgSrc: snakeGame,
           link: "https://github.com/EHuq/Snake-Game",
@@ -54,7 +71,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 3,
+          id: 4,
           title: "Drink Mixer",
           //imgSrc: visualizer,
           link: "https://github.com/EHuq/Gene-Project",
