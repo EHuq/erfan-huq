@@ -156,6 +156,7 @@ class Projects extends React.Component {
                       >
                         {" "}
                         {point}
+                        <br />
                       </div>
                     </section>
                   ))}
