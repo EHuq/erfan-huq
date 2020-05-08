@@ -191,6 +191,7 @@ class Projects extends React.Component {
                       >
                         {" "}
                         {point}
+                        <br />
                       </div>
                     </section>
                   ))}
@@ -234,6 +235,7 @@ class Projects extends React.Component {
                       >
                         {" "}
                         {point}
+                        <br />
                       </div>
                     </section>
                   ))}
