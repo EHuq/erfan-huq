@@ -81,11 +81,12 @@ class Skills extends React.Component {
             <img style={{...styles.images}} src={ReactIcon} />
             <img style={{...styles.images}} src={VueIcon} />
             <img style={{...styles.images}} src={CPPIcon} />
+            <img style={{...styles.images}} src={PythonIcon} />
+            <img style={{...styles.images}} src={JavaIcon} />
             <img style={{...styles.images}} src={HTML5Icon} />
             <img style={{...styles.images}} src={CSS3Icon} />
             <img style={{...styles.images}} src={JSIcon} />
-            <img style={{...styles.images}} src={PythonIcon} />
-            <img style={{...styles.images}} src={JavaIcon} />
+            
           </Carousel>
         </div>
       </div>
