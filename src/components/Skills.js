@@ -109,24 +109,6 @@ const styles = {
     margin: "0 auto",
   },
 
-  box: {
-    borderRadius: "100%",
-    margin: "0 0 0 1%",
-    width: "20px",
-    height: "20px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    position: "relative",
-    top: "45px",
-    backgroundColor: "#777777",
-  },
-  description: {
-    margin: "0 0 5% 20%",
-    textAlign: "left",
-    padding: "1rem",
-    color: "#777777",
-  },
   block: {
     backgroundColor: "#FFA600",
     borderRadius: "15px 15px",
@@ -136,7 +118,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    position: "relative", //change to sticky once I figurre out
+    position: "relative",
     //how to change the circles to sticky too
     top: "0px",
   },

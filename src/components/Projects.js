@@ -104,6 +104,8 @@ class Projects extends React.Component {
         style={{
           fontFamily: "Poppins-Medium",
           textAlign: "center",
+          backgroundColor: "#28023D",
+          paddingBottom: "1px",
         }}
       >
         <div style={styles.container}>
@@ -251,10 +253,10 @@ class Projects extends React.Component {
 
 const styles = {
   title: {
-    margin: "0 0 0 0",
+    margin: "30px 0 0 0",
     paddingTop: "10px",
     fontSize: "32px",
-    color: "#777777",
+    color: "#EEEEEE",
     textAlign: "left",
     fontWeight: "550",
   },
@@ -275,13 +277,13 @@ const styles = {
     alignItems: "center",
     position: "relative",
     top: "45px",
-    backgroundColor: "#777777",
+    backgroundColor: "#FFA600",
   },
   description: {
     margin: "0 0 5% 20%",
     textAlign: "left",
     padding: "1rem",
-    color: "#777777",
+    color: "#EEEEEE",
   },
   block: {
     backgroundColor: "#FFA600",
@@ -294,7 +296,7 @@ const styles = {
     alignItems: "center",
     position: "relative", //change to sticky once I figurre out
     //how to change the circles to sticky too
-    top: "0px",
+    top: "30px"
   },
 };
 
