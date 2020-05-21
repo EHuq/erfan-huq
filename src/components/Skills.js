@@ -77,9 +77,7 @@ class Skills extends React.Component {
             arrowLeft={<img className="carouselArrows" src={arrowLeft} />}
             arrowRight={<img className="carouselArrows" src={arrowRight}/>}
             addArrowClickHandler
-            style={{
-              marginBottom: "30px"
-            }}
+            
           >
             <img style={{...styles.images}} src={ReactIcon} />
             <img style={{...styles.images}} src={VueIcon} />
@@ -92,6 +90,9 @@ class Skills extends React.Component {
             
           </Carousel>
         </div>
+        <div style={{
+              marginBottom: "50px"
+            }}></div>
       </div>
     );
   }
