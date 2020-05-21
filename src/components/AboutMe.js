@@ -2,9 +2,6 @@ import React from "react";
 
 import MediaQuery from "react-responsive";
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-
 class AboutMe extends React.Component {
   constructor(props) {
     super(props);

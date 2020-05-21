@@ -2,6 +2,7 @@ import React from "react";
 import Summary from "../components/Summary";
 import Projects from "../components/Projects";
 import AboutMe from "../components/AboutMe";
+import Skills from "../components/Skills";
 
 function Home(props) {
   return (
@@ -17,6 +18,7 @@ function Home(props) {
         links={true}
       />
       <AboutMe />
+      <Skills />
       <Projects />
     </div>
   );

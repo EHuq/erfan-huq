@@ -16,7 +16,6 @@ class Contacts extends React.Component {
     };
   }
 
-
   render() {
     return (
       <div className="contacts">
@@ -31,22 +30,10 @@ class Contacts extends React.Component {
               <Form.Control id="full-name" name="name" type="text" />
             </Form.Group>
 
-            {/* <p>
-              <label>
-                Name <input type="text" name="name" />
-              </label>
-            </p> */}
-
             <Form.Group>
               <Form.Label htmlFor="email">Email</Form.Label>
               <Form.Control id="email" name="email" type="email" />
             </Form.Group>
-
-            {/* <p>
-              <label>
-                Email <input type="email" name="email" />
-              </label>
-            </p> */}
 
             <Form.Group>
               <Form.Label htmlFor="message">Message</Form.Label>
@@ -55,8 +42,6 @@ class Contacts extends React.Component {
                 name="message"
                 as="textarea"
                 rows="3"
-              // value={this.state.message}
-              // onChange={this.handleChange}
               />
             </Form.Group>
 
@@ -68,15 +53,6 @@ class Contacts extends React.Component {
             >
               Send
             </Button>
-
-            {/* <p>
-              <label>
-                Message <textarea name="message"></textarea>
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p> */}
           </form>
         </Content>
       </div>

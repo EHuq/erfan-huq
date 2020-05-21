@@ -18,11 +18,6 @@ code {
     monospace;
 }
 
-.e-card {
-  margin: 20px;
-  font-family: "Poppins-Medium";
-}
-
 .box-pic-text {
   width: "80%";
   margin: "0 auto";
@@ -36,40 +31,25 @@ code {
   font-family: "Poppins-Medium";
 }
 
-.e-card-info {
+.card-info {
   margin-top: 10px;
   min-height: 100px;
   font-family: "Poppins-Medium";
 }
 
-.e-card-title {
+.card-title {
   color: #777777;
-  text-decoration: none;
+  text-decoration: none;  
   font-size: 24px;
   margin: 0px;
   font-family: "Poppins-Medium";
 }
 
-.e-card-title:hover {
+.card-title:hover {
   text-decoration: none;
   color: #ffa600;
 }
 
-.e-card-sub-title {
-  font-size: 16px;
-  margin: 0px;
-  font-family: "Poppins-Medium";
-}
-
-.success-msg {
-  color: #57a773;
-  padding: 10px 15px;
-}
-
-.err-msg {
-  color: #ee6352;
-  padding: 10px 15px;
-}
 
 .footer {
   position: relative;
@@ -145,6 +125,14 @@ code {
 .button:hover .link {
   text-decoration: none;
   color: #ffa600;
+}
+
+.carouselArrows{
+  background-color: white;
+}
+
+.carouselArrows:hover{
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1945px) {

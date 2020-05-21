@@ -138,7 +138,7 @@ class Projects extends React.Component {
                 ></div>
                 <div style={styles.description}>
                   <a
-                    className="e-card-title"
+                    className="card-title"
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -173,7 +173,7 @@ class Projects extends React.Component {
                   }}
                 >
                   <a
-                    className="e-card-title"
+                    className="card-title"
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -213,7 +213,7 @@ class Projects extends React.Component {
                   }}
                 >
                   <a
-                    className="e-card-title"
+                    className="card-title"
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
