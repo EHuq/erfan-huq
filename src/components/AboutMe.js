@@ -30,7 +30,7 @@ class AboutMe extends React.Component {
             <div
               style={{
                 ...styles.title,
-                fontSize: "48px",
+                fontSize: "3rem",
                 width: "150px",
               }}
             >
@@ -109,7 +109,7 @@ const styles = {
   title: {
     margin: "0 0 0 0",
     paddingTop: "10px",
-    fontSize: "32px",
+    fontSize: "2rem",
     color: "#EEEEEE",
     textAlign: "left",
     fontWeight: "550",
@@ -125,7 +125,7 @@ const styles = {
     margin: "0 -100px 0 20%",
     textAlign: "left",
     color: "#EEEEEE",
-    fontSize: "24px",
+    fontSize: "1.5rem",
   },
   block: {
     backgroundColor: "#FFA600",

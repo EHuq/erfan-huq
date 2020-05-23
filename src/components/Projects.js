@@ -114,7 +114,7 @@ class Projects extends React.Component {
             <div
               style={{
                 ...styles.title,
-                fontSize: "48px",
+                fontSize: "3rem",
               }}
             >
               Projects
@@ -220,7 +220,7 @@ class Projects extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      fontSize: "32px",
+                      fontSize: "2rem",
                     }}
                   >
                     {item.title}
@@ -232,7 +232,7 @@ class Projects extends React.Component {
                           ...styles.description,
                           margin: "0 -10px 0 0",
                           padding: "0 10px",
-                          fontSize: "24px",
+                          fontSize: "1.5remgi",
                         }}
                       >
                         {" "}
@@ -255,7 +255,7 @@ const styles = {
   title: {
     margin: "30px 0 0 0",
     paddingTop: "10px",
-    fontSize: "32px",
+    fontSize: "2rem",
     color: "#EEEEEE",
     textAlign: "left",
     fontWeight: "550",
