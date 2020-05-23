@@ -62,11 +62,10 @@ class Skills extends React.Component {
             infinite
             dots
             slidesPerPage={3}
-            slidesPerScroll={2}
+            slidesPerScroll={1}
             breakpoints={{
               500: {
                 slidesPerPage: 1,
-                slidesPerScroll: 1,
                 arrows: false
               },
               900:{
