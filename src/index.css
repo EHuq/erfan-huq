@@ -66,11 +66,9 @@ code {
 }
 
 .contacts {
-  min-height: calc(100vh - 162px);
+  min-height: calc(100vh - 115px);
   font-family: "Poppins-Medium";
 }
-
-
 
 .points {
   color: #EEEEEE;

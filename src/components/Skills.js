@@ -24,10 +24,11 @@ class Skills extends React.Component {
   render() {
     return (
       <div
+        id= "skills"
         style={{
           fontFamily: "Poppins-Medium",
           textAlign: "center",
-          marginTop: "30px"
+          paddingTop: "50px"
         }}
       >
         <div style={styles.container}>

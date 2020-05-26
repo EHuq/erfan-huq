@@ -1,8 +1,8 @@
 import React from "react";
-import Summary from "../components/Summary";
 import Content from "../components/Content";
 import { Form, Button } from "react-bootstrap";
 import Axios from "axios";
+import { Jumbotron, Container, Row, Col } from "react-bootstrap";
 
 class Contacts extends React.Component {
   constructor(props) {
@@ -18,8 +18,21 @@ class Contacts extends React.Component {
 
   render() {
     return (
-      <div className="contacts">
-        <Summary title={this.props.title} />
+      <div className="contacts" id="contacts">
+        <Jumbotron
+          className="bg-transparent jumbotron-fluid"
+          style={{ width: "100%", fontFamily: "Poppins-Medium" }}
+        >
+          <Container fluid={true}>
+            <Row className="justify-content-center" style={{ width: "100%" }}>
+              <Col style={{ textAlign: "center", width: "90%" }}>
+
+                <h1 className="display-1 font-weight-bolder">Let's Talk</h1>
+
+              </Col>
+            </Row>
+          </Container>
+        </Jumbotron>
         <input type="hidden" name="form-name" value="contact" />
         <Content className="contacts">
           <form name="contact" method="post">

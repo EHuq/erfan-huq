@@ -11,11 +11,13 @@ class AboutMe extends React.Component {
   render() {
     return (
       <div
+        id="about"
         style={{
           fontFamily: "Poppins-Medium",
           textAlign: "center",
           backgroundColor: "#28023D",
           paddingBottom: "1px",
+          paddingTop: "20px"
         }}
       >
         <div style={styles.container}>

@@ -101,11 +101,13 @@ class Projects extends React.Component {
   render() {
     return (
       <div
+        id="projects"
         style={{
           fontFamily: "Poppins-Medium",
           textAlign: "center",
           backgroundColor: "#28023D",
           paddingBottom: "1px",
+          paddingTop: "1px"
         }}
       >
         <div style={styles.container}>

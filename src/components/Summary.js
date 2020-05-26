@@ -6,13 +6,14 @@ function Summary(props) {
   return (
     <Jumbotron
       className="bg-transparent jumbotron-fluid"
+      id="home"
       style={{ width: "100%", fontFamily: "Poppins-Medium" }}
     >
       <Container fluid={true}>
         <Row className="justify-content-center" style={{ width: "100%" }}>
-          <Col style={{ textAlign: "center", width: "90%" }}>
+          <Col style={{ textAlign: "center", width: "90%", margin: "4rem", marginTop: "7rem" }}>
             {props.title && (
-              <h1 className="display-1 font-weight-bolder">{props.title}</h1>
+              <h1 className="display-1 font-weight-bolder" >{props.title}</h1>
             )}
             {props.subTitle && (
               <h3 className="display-4 font-weight-light">{props.subTitle}</h3>
