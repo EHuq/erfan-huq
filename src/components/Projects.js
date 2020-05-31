@@ -12,6 +12,42 @@ class Projects extends React.Component {
       items: [
         {
           id: 0,
+          title: "Weather App",
+          // imgSrc: sortingVisualizer,
+          link: "WhatsTheWeather-vue.netlify.app",
+          selected: false,
+          resume: [
+            <li className="points">
+              Developed a responsive site using <b>Vue</b> in <b>VS Code</b> to fetch weather data from across the world in real-time using the Open Weather API
+            </li>,
+            <li className="points">
+              Created a mobile-first design using <b>Canva</b> and ensured accuracy of data by thorough testing
+            </li>,
+
+          ],
+        },
+        {
+          id: 1,
+          title: "Expense Tracker",
+          // imgSrc: sortingVisualizer,
+          link: "https://github.com/EHuq/expense-tracker",
+          selected: false,
+          resume: [
+            <li className="points">
+              Developed a responsive <b>MERN</b> app with <b>MongoDB, Express, React,</b> and <b>NodeJs</b>
+            </li>,
+            <li className="points">
+              Integrated backend built with <b>NodeJs</b> and <b>Express </b>
+              with frontend built using <b>React</b>
+            </li>,
+            <li className="points">
+              Utilized <b>Canva</b> to design a mobile-first design
+            </li>,
+
+          ],
+        },
+        {
+          id: 2,
           title: "COVID-19 Tracker",
           // imgSrc: sortingVisualizer,
           link: "https://erfans-covid-tracker.netlify.app",
@@ -28,7 +64,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 1,
+          id: 3,
           title: "Sorting Algorithms Visualizer",
           // imgSrc: sortingVisualizer,
           link: "https://github.com/EHuq/SortingAlgorithmVisualizer",
@@ -41,7 +77,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 2,
+          id: 4,
           title: "Maze Solver",
           // imgSrc: mazeSolver,
           link: "https://github.com/EHuq/MazeSolver",
@@ -54,7 +90,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 3,
+          id: 5,
           title: "Snake Game",
           // imgSrc: snakeGame,
           link: "https://github.com/EHuq/Snake-Game",
@@ -71,7 +107,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 4,
+          id: 6,
           title: "Drink Mixer",
           //imgSrc: visualizer,
           link: "https://github.com/EHuq/Gene-Project",
