@@ -14,7 +14,7 @@ function Home(props) {
       }}
     >
       <Summary
-
+        className="mainPage"
         title={props.title}
         subTitle={props.subTitle}
         text={props.text}

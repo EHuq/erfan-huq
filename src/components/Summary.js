@@ -5,13 +5,13 @@ import resume from "../assets/Resume/Resume.pdf";
 function Summary(props) {
   return (
     <Jumbotron
-      className="bg-transparent jumbotron-fluid"
+      className="jumbotron-fluid mainPage"
       id="home"
       style={{ width: "100%", fontFamily: "Poppins-Medium" }}
     >
       <Container fluid={true}>
         <Row className="justify-content-center" style={{ width: "100%" }}>
-          <Col style={{ textAlign: "center", width: "90%", margin: "4rem", marginTop: "7rem" }}>
+          <Col style={{ textAlign: "center", width: "90%", margin: "4rem", marginTop: "7rem", color: "#EEEEEE" }}>
             {props.title && (
               <h1 className="display-1 font-weight-bolder" >{props.title}</h1>
             )}
