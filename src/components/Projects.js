@@ -14,7 +14,7 @@ class Projects extends React.Component {
           id: 0,
           title: "Weather App",
           // imgSrc: sortingVisualizer,
-          link: "WhatsTheWeather-vue.netlify.app",
+          link: "https://WhatsTheWeather-vue.netlify.app",
           selected: false,
           resume: [
             <li className="points">
