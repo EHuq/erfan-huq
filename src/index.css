@@ -49,6 +49,11 @@ code {
   font-family: "Poppins-Medium";
 }
 
+.title-container{
+  display: flex;
+  
+}
+
 .card-title {
   color: #eeeeee;
   text-decoration: none;  
@@ -104,14 +109,12 @@ code {
   color: #ffa600;
   display: flex;
   text-decoration: none;
-  padding-bottom: 20px;
-  margin: auto auto 10px 20px;
-  text-align: center;
-  vertical-align: top;
+  margin: auto;
+  margin-left: 25px;
 }
 
 .visible:hover{
-  color: #27003c;
+  color: #9a329e;
   text-decoration: none;
 }
 

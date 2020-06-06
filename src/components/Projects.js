@@ -233,7 +233,7 @@ class Projects extends React.Component {
                   }}
                 ></div>
                 <div style={styles.description}>
-                  <div>
+                  <div className="title-container">
                     <a
                       className="card-title"
                       href={item.link}
@@ -292,7 +292,7 @@ class Projects extends React.Component {
                     paddingTop: "2rem",
                   }}
                 >
-                  <div>
+                  <div className="title-container">
                     <a
                       className="card-title"
                       href={item.link}
@@ -358,7 +358,7 @@ class Projects extends React.Component {
                     marginTop: "-10px",
                   }}
                 >
-                  <div>
+                  <div className="title-container">
                     <a
                       className="card-title"
                       href={item.link}
