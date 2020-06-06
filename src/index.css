@@ -100,6 +100,21 @@ code {
   text-decoration: none;
 }
 
+.visible {
+  color: #ffa600;
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 20px;
+  margin: auto auto 10px 20px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.visible:hover{
+  color: #27003c;
+  text-decoration: none;
+}
+
 .home-alt {
   text-decoration: none;
   color: black;
