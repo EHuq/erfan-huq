@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import MediaQuery from "react-responsive";
+import MediaQuery from 'react-responsive';
 
 class AboutMe extends React.Component {
   constructor(props) {
@@ -9,22 +9,23 @@ class AboutMe extends React.Component {
   }
 
   render() {
+    const CoopDate = 'December 2020';
     return (
       <div
-        id="about"
+        id='about'
         style={{
-          fontFamily: "Poppins-Medium",
-          textAlign: "center",
-          backgroundColor: "#28023D",
-          paddingBottom: "1px",
-          paddingTop: "20px"
+          fontFamily: 'Poppins-Medium',
+          textAlign: 'center',
+          backgroundColor: '#28023D',
+          paddingBottom: '1px',
+          paddingTop: '20px',
         }}
       >
         <div style={styles.container}>
           <div
             style={{
               ...styles.box,
-              height: "30px",
+              height: '30px',
             }}
           ></div>
           <div style={{ ...styles.block }}></div>
@@ -32,8 +33,8 @@ class AboutMe extends React.Component {
             <div
               style={{
                 ...styles.title,
-                fontSize: "3rem",
-                width: "150px",
+                fontSize: '3rem',
+                width: '150px',
               }}
             >
               About
@@ -43,7 +44,7 @@ class AboutMe extends React.Component {
             <div
               style={{
                 ...styles.title,
-                width: "150px",
+                width: '150px',
               }}
             >
               About
@@ -54,20 +55,20 @@ class AboutMe extends React.Component {
             <div
               style={{
                 ...styles.description,
-                margin: "25px 0 50px 0",
+                margin: '25px 0 50px 0',
               }}
             >
               <p>
                 Hey, I'm Erfan Huq, in case you couldn’t tell by the massive
-                bold name staring at you above. I have a passion for{" "}
+                bold name staring at you above. I have a passion for{' '}
                 <b>software development</b>, both
                 <b> front-end</b> and <b>back-end</b>. One of my life goals,
                 however, is to work on projects involving
                 <b> Artificial Intelligence</b> and <b>autonomous vehicles</b>.
                 I am also a team player with a strong aptitude for technology, a
                 hunger for solving problems, and always seeking new challenges.
-                I am currently seeking new co-op roles starting{" "}
-                <b>April 2021</b>. Please feel free to reach out if you are
+                I am currently seeking new co-op roles starting{' '}
+                <b>{CoopDate}</b>. Please feel free to reach out if you are
                 looking to collaborate or know of any opportunities aligning
                 with my interests!
               </p>
@@ -79,21 +80,21 @@ class AboutMe extends React.Component {
                 <div
                   style={{
                     ...styles.description,
-                    margin: "-50px 0 50px 0",
-                    padding: "0 10px",
+                    margin: '-50px 0 50px 0',
+                    padding: '0 10px',
                   }}
                 >
                   <p>
                     Hey, I'm Erfan Huq, in case you couldn’t tell by the massive
-                    bold name staring at you above. I have a passion for{" "}
+                    bold name staring at you above. I have a passion for{' '}
                     <b>software development</b>, both
                     <b> front-end</b> and <b>back-end</b>. One of my life goals,
                     however, is to work on projects involving
-                    <b> Artificial Intelligence</b> and{" "}
+                    <b> Artificial Intelligence</b> and{' '}
                     <b>autonomous vehicles</b>. I am also a team player with a
                     strong aptitude for technology, a hunger for solving
                     problems, and always seeking new challenges. I am currently
-                    seeking new co-op roles starting <b>April 2021</b>. Please
+                    seeking new co-op roles starting <b>{CoopDate}</b>. Please
                     feel free to reach out if you are looking to collaborate or
                     know of any opportunities aligning with my interests!
                   </p>
@@ -109,38 +110,38 @@ class AboutMe extends React.Component {
 
 const styles = {
   title: {
-    margin: "0 0 0 0",
-    paddingTop: "10px",
-    fontSize: "2rem",
-    color: "#EEEEEE",
-    textAlign: "left",
-    fontWeight: "550",
+    margin: '0 0 0 0',
+    paddingTop: '10px',
+    fontSize: '2rem',
+    color: '#EEEEEE',
+    textAlign: 'left',
+    fontWeight: '550',
   },
 
   container: {
-    justifyContent: "center",
-    width: "60%",
-    margin: "0 auto",
+    justifyContent: 'center',
+    width: '60%',
+    margin: '0 auto',
   },
 
   description: {
-    margin: "0 -100px 0 20%",
-    textAlign: "left",
-    color: "#EEEEEE",
-    fontSize: "1.5rem",
+    margin: '0 -100px 0 20%',
+    textAlign: 'left',
+    color: '#EEEEEE',
+    fontSize: '1.5rem',
   },
   block: {
-    backgroundColor: "#FFA600",
-    borderRadius: "15px 15px",
-    margin: "0 0 0 0",
-    width: "75px",
-    height: "10px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    position: "relative", //change to sticky once I figurre out
+    backgroundColor: '#FFA600',
+    borderRadius: '15px 15px',
+    margin: '0 0 0 0',
+    width: '75px',
+    height: '10px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative', //change to sticky once I figurre out
     //how to change the circles to sticky too
-    top: "0px",
+    top: '0px',
   },
 };
 
