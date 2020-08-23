@@ -17,6 +17,8 @@ class Projects extends React.Component {
           link: 'https://frauddit.netlify.app/',
           github: 'https://github.com/EHuq/reddit-clone',
           visible: true,
+          demo: true,
+
           selected: false,
           resume: [
             <li className='points'>
@@ -33,6 +35,10 @@ class Projects extends React.Component {
               control principles
             </li>,
           ],
+          skills: [
+            <div className='skillPoints'>Vue</div>,
+            <div className='skillPoints'>Firebase</div>,
+          ],
         },
         {
           id: 7,
@@ -41,6 +47,7 @@ class Projects extends React.Component {
           link: 'https://chattarama.herokuapp.com/',
           github: 'https://github.com/EHuq/talkwithme',
           visible: true,
+          demo: true,
 
           selected: false,
           resume: [
@@ -56,6 +63,12 @@ class Projects extends React.Component {
             </li>,
             <li className='points'>Updates in real-time for multiple users</li>,
           ],
+          skills: [
+            <div className='skillPoints'>HTML5</div>,
+            <div className='skillPoints'>CSS3</div>,
+            <div className='skillPoints'>JavaScript</div>,
+            <div className='skillPoints'>Express</div>,
+          ],
         },
         {
           id: 6,
@@ -64,6 +77,8 @@ class Projects extends React.Component {
           link: 'https://nolosses.herokuapp.com/',
           github: 'https://github.com/EHuq/expense-tracker',
           visible: true,
+          demo: true,
+
           selected: false,
           resume: [
             <li className='points'>
@@ -78,6 +93,12 @@ class Projects extends React.Component {
               Utilized <b>Canva</b> to design a mobile-first design
             </li>,
           ],
+          skills: [
+            <div className='skillPoints'>React</div>,
+            <div className='skillPoints'>MongoDB</div>,
+            <div className='skillPoints'>Express</div>,
+            <div className='skillPoints'>NodeJs</div>,
+          ],
         },
         {
           id: 5,
@@ -86,6 +107,8 @@ class Projects extends React.Component {
           link: 'https://weatherinreact.netlify.app/',
           github: 'https://github.com/EHuq/weather-app-react',
           visible: true,
+          demo: true,
+
           selected: false,
           resume: [
             <li className='points'>
@@ -97,6 +120,7 @@ class Projects extends React.Component {
               Cloned previous project from <b>Vue</b> to <b>React</b>
             </li>,
           ],
+          skills: [<div className='skillPoints'>React</div>],
         },
         {
           id: 5,
@@ -105,6 +129,8 @@ class Projects extends React.Component {
           link: 'https://weatherinvue.netlify.app/',
           github: 'https://github.com/EHuq/weather-app-vue',
           visible: true,
+          demo: true,
+
           selected: false,
           resume: [
             <li className='points'>
@@ -117,6 +143,7 @@ class Projects extends React.Component {
               accuracy of data by thorough testing
             </li>,
           ],
+          skills: [<div className='skillPoints'>Vue</div>],
         },
 
         {
@@ -126,6 +153,8 @@ class Projects extends React.Component {
           link: 'https://erfans-covid-tracker.netlify.app',
           github: 'https://github.com/EHuq/corona_tracker',
           visible: true,
+          demo: true,
+
           selected: false,
           resume: [
             <li className='points'>
@@ -137,6 +166,7 @@ class Projects extends React.Component {
               create visualizations of said data
             </li>,
           ],
+          skills: [<div className='skillPoints'>React</div>],
         },
         {
           id: 3,
@@ -145,6 +175,8 @@ class Projects extends React.Component {
           link: 'https://github.com/EHuq/SortingAlgorithmVisualizer',
           github: 'https://github.com/EHuq/SortingAlgorithmVisualizer',
           visible: true,
+          demo: false,
+
           selected: false,
           resume: [
             <li className='points'>
@@ -152,6 +184,7 @@ class Projects extends React.Component {
               for a variety of sorting algorithms
             </li>,
           ],
+          skills: [<div className='skillPoints'>Python</div>],
         },
         {
           id: 2,
@@ -160,6 +193,8 @@ class Projects extends React.Component {
           link: 'https://github.com/EHuq/MazeSolver',
           github: 'https://github.com/EHuq/MazeSolver',
           visible: true,
+          demo: false,
+
           selected: false,
           resume: [
             <li className='points'>
@@ -167,6 +202,7 @@ class Projects extends React.Component {
               breadth-first algorithm to solve a given maze
             </li>,
           ],
+          skills: [<div className='skillPoints'>Python</div>],
         },
         {
           id: 1,
@@ -175,6 +211,8 @@ class Projects extends React.Component {
           link: 'https://github.com/EHuq/Snake-Game',
           github: 'https://github.com/EHuq/Snake-Game',
           visible: true,
+          demo: false,
+
           selected: false,
           resume: [
             <li className='points'>
@@ -186,6 +224,10 @@ class Projects extends React.Component {
               <b> Netbeans</b> development environment
             </li>,
           ],
+          skills: [
+            <div className='skillPoints'>Java</div>,
+            <div className='skillPoints'>Java Swing</div>,
+          ],
         },
         {
           id: 0,
@@ -194,6 +236,7 @@ class Projects extends React.Component {
           link: 'https://github.com/EHuq/Gene-Project',
           github: 'https://github.com/EHuq/Gene-Project',
           visible: true,
+          demo: false,
           selected: false,
           resume: [
             <li className='points'>
@@ -212,6 +255,7 @@ class Projects extends React.Component {
               <b>UML</b>
             </li>,
           ],
+          skills: [<div className='skillPoints'>RobotC</div>],
         },
       ],
     };
@@ -272,21 +316,33 @@ class Projects extends React.Component {
                     >
                       {item.title}
                     </a>
-                    {item.visible ? (
-                      <a
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href={item.github}
-                        className='fa fa-eye fa-lg visible'
-                      ></a>
-                    ) : (
-                      <a
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href='https://github.com/EHuq'
-                        className='fa fa-eye-slash fa-lg visible disabled'
-                      ></a>
-                    )}
+                    <div className='iconContainer'>
+                      {item.visible ? (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href={item.github}
+                          className='fa fa-github fa-2x visible'
+                        ></a>
+                      ) : (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href='https://github.com/EHuq'
+                          className='fa fa-github-slash fa-lg visible disabled'
+                        ></a>
+                      )}
+                      {item.demo ? (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href={item.link}
+                          className='fa fa-desktop fa-2x visible'
+                        ></a>
+                      ) : (
+                        ''
+                      )}
+                    </div>
                   </div>
                   {item.resume.map((point) => (
                     <section>
@@ -303,6 +359,19 @@ class Projects extends React.Component {
                       </div>
                     </section>
                   ))}
+                  <div
+                    style={{
+                      // ...styles.description,
+                      display: 'flex',
+                      color: 'red',
+                      margin: '0 -100px 0 0',
+                      padding: '0 10px',
+                    }}
+                  >
+                    {item.skills.map((skill) => (
+                      <div>{skill}</div>
+                    ))}
+                  </div>
                 </div>
               </MediaQuery>
 
@@ -311,7 +380,7 @@ class Projects extends React.Component {
                   style={{
                     margin: '0 0 0 0',
                     textAlign: 'left',
-                    paddingBottom: '1rem',
+                    paddingBottom: '2rem',
                     paddingTop: '2rem',
                   }}
                 >
@@ -327,21 +396,33 @@ class Projects extends React.Component {
                     >
                       {item.title}
                     </a>
-                    {item.visible ? (
-                      <a
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href={item.github}
-                        className='fa fa-eye fa-lg visible'
-                      ></a>
-                    ) : (
-                      <a
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href='https://github.com/EHuq'
-                        className='fa fa-eye-slash fa-lg visible disabled'
-                      ></a>
-                    )}
+                    <div className='iconContainer'>
+                      {item.visible ? (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href={item.github}
+                          className='fa fa-github fa-2x visible'
+                        ></a>
+                      ) : (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href='https://github.com/EHuq'
+                          className='fa fa-github-slash fa-lg visible disabled'
+                        ></a>
+                      )}
+                      {item.demo ? (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href={item.link}
+                          className='fa fa-desktop fa-2x visible'
+                        ></a>
+                      ) : (
+                        ''
+                      )}
+                    </div>
                   </div>
                   {item.resume.map((point) => (
                     <section>
@@ -358,6 +439,19 @@ class Projects extends React.Component {
                       </div>
                     </section>
                   ))}
+                  <div
+                    style={{
+                      // ...styles.description,
+                      display: 'flex',
+                      color: 'red',
+                      margin: '0 -100px 0 0',
+                      padding: '0 10px',
+                    }}
+                  >
+                    {item.skills.map((skill) => (
+                      <div>{skill}</div>
+                    ))}
+                  </div>
                 </div>
               </MediaQuery>
 
@@ -389,21 +483,33 @@ class Projects extends React.Component {
                     >
                       {item.title}
                     </a>
-                    {item.visible ? (
-                      <a
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href={item.github}
-                        className='fa fa-eye fa-lg visible'
-                      ></a>
-                    ) : (
-                      <a
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href='https://github.com/EHuq'
-                        className='fa fa-eye-slash fa-lg visible disabled'
-                      ></a>
-                    )}
+                    <div className='iconContainer'>
+                      {item.visible ? (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href={item.github}
+                          className='fa fa-github fa-2x visible'
+                        ></a>
+                      ) : (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href='https://github.com/EHuq'
+                          className='fa fa-github-slash fa-lg visible disabled'
+                        ></a>
+                      )}
+                      {item.demo ? (
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          href={item.link}
+                          className='fa fa-desktop fa-2x visible'
+                        ></a>
+                      ) : (
+                        ''
+                      )}
+                    </div>
                   </div>
 
                   {item.resume.map((point) => (
@@ -422,6 +528,19 @@ class Projects extends React.Component {
                       </div>
                     </section>
                   ))}
+                  <div
+                    style={{
+                      // ...styles.description,
+                      display: 'flex',
+                      color: 'red',
+                      margin: '0 -100px 0 0',
+                      padding: '0 10px',
+                    }}
+                  >
+                    {item.skills.map((skill) => (
+                      <div>{skill}</div>
+                    ))}
+                  </div>
                 </div>
               </MediaQuery>
             </section>

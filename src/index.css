@@ -1,65 +1,65 @@
 @font-face {
-  font-family: "Poppins-Medium";
-  src: local("Poppins-Medium"),
-    url(./fonts/Poppins-Medium.ttf) format("truetype");
+  font-family: 'Poppins-Medium';
+  src: local('Poppins-Medium'),
+    url(./fonts/Poppins-Medium.ttf) format('truetype');
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Poppins-Medium", "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins-Medium', 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.mainPage{
+.mainPage {
   margin-bottom: 0 !important;
   background-size: cover;
   transition: 0.4s;
   background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.9)
-  ),
-  url("./assets/images/background.jpg");
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('./assets/images/background.jpg');
 }
 
 .box-pic-text {
-  width: "80%";
-  margin: "0 auto";
+  width: '80%';
+  margin: '0 auto';
 }
 
 .description {
-  margin: "-100px 0 100px 125px";
-  text-align: "left";
-  box-shadow: "0px 3px 0px 15px deeppink, 46px -20px 0px 26px black";
-  padding: "1rem";
-  font-family: "Poppins-Medium";
+  margin: '-100px 0 100px 125px';
+  text-align: 'left';
+  box-shadow: '0px 3px 0px 15px deeppink, 46px -20px 0px 26px black';
+  padding: '1rem';
+  font-family: 'Poppins-Medium';
 }
 
 .card-info {
   margin-top: 10px;
   min-height: 100px;
-  font-family: "Poppins-Medium";
+  font-family: 'Poppins-Medium';
 }
 
-.title-container{
+.title-container {
   display: flex;
-  
+  justify-content: space-between;
 }
 
 .card-title {
   color: #eeeeee;
-  text-decoration: none;  
+  text-decoration: none;
   font-size: 1.5rem;
   margin: 0px;
-  font-family: "Poppins-Medium";
+  font-family: 'Poppins-Medium';
 }
 
 .card-title:hover {
@@ -67,29 +67,28 @@ code {
   color: #ffa600;
 }
 
-
 .footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  font-family: "Poppins-Medium";
+  font-family: 'Poppins-Medium';
   /* z-index: -1; */
 }
 
 .aboutMe {
   min-height: calc(100vh - 162px);
-  font-family: "Poppins-Medium";
+  font-family: 'Poppins-Medium';
 }
 
 .contacts {
   min-height: calc(100vh - 115px);
-  font-family: "Poppins-Medium";
+  font-family: 'Poppins-Medium';
 }
 
 .points {
-  color: #EEEEEE;
+  color: #eeeeee;
   font-size: 1.2rem;
-  font-family: "Poppins-Medium";
+  font-family: 'Poppins-Medium';
 }
 
 .linkedCircles {
@@ -105,15 +104,20 @@ code {
   text-decoration: none;
 }
 
+.iconContainer {
+  display: flex;
+  justify-content: end;
+  margin: auto 0px;
+}
+
 .visible {
   color: #ffa600;
   display: flex;
   text-decoration: none;
-  margin: auto;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
-.visible:hover{
+.visible:hover {
   color: #9a329e;
   text-decoration: none;
 }
@@ -121,7 +125,7 @@ code {
 .home-alt {
   text-decoration: none;
   color: black;
-  font-family: "Poppins-Medium";
+  font-family: 'Poppins-Medium';
 }
 
 .home-alt:hover {
@@ -138,7 +142,7 @@ code {
   margin-right: 15px;
   margin-bottom: -100px;
   width: 150px;
-  font-family: "Poppins-Medium";
+  font-family: 'Poppins-Medium';
 }
 
 .button:hover {
@@ -157,12 +161,22 @@ code {
   color: #ffa600;
 }
 
-.carouselArrows{
+.carouselArrows {
   background-color: white;
 }
 
-.carouselArrows:hover{
+.carouselArrows:hover {
   cursor: pointer;
+}
+
+.skillPoints {
+  display: flex;
+  border: #ffa600 1px solid;
+  border-radius: 5px;
+  background-color: #ffa600;
+  color: #65009b;
+  padding: 2px 5px;
+  margin: 0px 5px 0px 5px;
 }
 
 @media only screen and (min-width: 1945px) {
@@ -171,4 +185,3 @@ code {
     margin-left: 10px;
   }
 }
-
