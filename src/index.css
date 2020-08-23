@@ -33,6 +33,7 @@ code {
 .box-pic-text {
   width: '80%';
   margin: '0 auto';
+  transition: all 200ms ease-in-out;
 }
 
 .description {
@@ -41,17 +42,20 @@ code {
   box-shadow: '0px 3px 0px 15px deeppink, 46px -20px 0px 26px black';
   padding: '1rem';
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
 }
 
 .card-info {
   margin-top: 10px;
   min-height: 100px;
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
 }
 
 .title-container {
   display: flex;
   justify-content: space-between;
+  transition: all 200ms ease-in-out;
 }
 
 .card-title {
@@ -60,6 +64,7 @@ code {
   font-size: 1.5rem;
   margin: 0px;
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
 }
 
 .card-title:hover {
@@ -72,23 +77,28 @@ code {
   bottom: 0;
   width: 100%;
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
+
   /* z-index: -1; */
 }
 
 .aboutMe {
   min-height: calc(100vh - 162px);
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
 }
 
 .contacts {
   min-height: calc(100vh - 115px);
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
 }
 
 .points {
   color: #eeeeee;
   font-size: 1.2rem;
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
 }
 
 .linkedCircles {
@@ -97,6 +107,7 @@ code {
   margin: 0px;
   margin-right: 15px;
   margin-top: 5px;
+  transition: all 200ms ease-in-out;
 }
 
 .linkedCircles:hover {
@@ -108,6 +119,7 @@ code {
   display: flex;
   justify-content: end;
   margin: auto 0px;
+  transition: all 200ms ease-in-out;
 }
 
 .visible {
@@ -115,6 +127,7 @@ code {
   display: flex;
   text-decoration: none;
   margin-left: 50px;
+  transition: all 200ms ease-in-out;
 }
 
 .visible:hover {
@@ -126,6 +139,7 @@ code {
   text-decoration: none;
   color: black;
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
 }
 
 .home-alt:hover {
@@ -143,10 +157,17 @@ code {
   margin-bottom: -100px;
   width: 150px;
   font-family: 'Poppins-Medium';
+  transition: all 200ms ease-in-out;
 }
 
 .button:hover {
   background-color: #65009b;
+}
+
+.button:active {
+  background-color: #65009b;
+  outline: none;
+  transform: scale(0.95);
 }
 
 .link {
@@ -154,6 +175,7 @@ code {
   color: #65009b;
   font-size: 1.2rem;
   font-weight: 700;
+  transition: all 200ms ease-in-out;
 }
 
 .button:hover .link {
@@ -161,8 +183,14 @@ code {
   color: #ffa600;
 }
 
+.carousel {
+  background-color: transparent;
+  transition: all 200ms ease-in-out;
+}
+
 .carouselArrows {
-  background-color: white;
+  background-color: transparent;
+  transition: all 200ms ease-in-out;
 }
 
 .carouselArrows:hover {
@@ -177,6 +205,7 @@ code {
   color: #65009b;
   padding: 2px 5px;
   margin: 0px 5px 0px 5px;
+  transition: all 200ms ease-in-out;
 }
 
 @media only screen and (min-width: 1945px) {
