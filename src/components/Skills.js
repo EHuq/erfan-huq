@@ -12,6 +12,7 @@ import JSIcon from '../assets/images/JSIcon.png';
 import PythonIcon from '../assets/images/PythonIcon.jpg';
 import JavaIcon from '../assets/images/JavaIcon.jpg';
 import CPPIcon from '../assets/images/CPPIcon.png';
+import firebaseLogo from '../assets/images/firebaseLogo.png';
 import arrowLeft from '../assets/images/leftArrow.png';
 import arrowRight from '../assets/images/rightArrow.png';
 
@@ -80,11 +81,12 @@ class Skills extends React.Component {
             <img style={{ ...styles.images }} src={ReactIcon} />
             <img style={{ ...styles.images }} src={VueIcon} />
             <img style={{ ...styles.images }} src={CPPIcon} />
-            <img style={{ ...styles.images }} src={PythonIcon} />
-            <img style={{ ...styles.images }} src={JavaIcon} />
+            <img style={{ ...styles.images }} src={firebaseLogo} />
             <img style={{ ...styles.images }} src={HTML5Icon} />
             <img style={{ ...styles.images }} src={CSS3Icon} />
             <img style={{ ...styles.images }} src={JSIcon} />
+            <img style={{ ...styles.images }} src={PythonIcon} />
+            <img style={{ ...styles.images }} src={JavaIcon} />
           </Carousel>
         </div>
         <div
