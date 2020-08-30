@@ -74,23 +74,21 @@ class Projects extends React.Component {
           id: 6,
           title: 'No Losses - An Expense Tracker',
           // imgSrc: sortingVisualizer,
-          link: 'https://nolosses.herokuapp.com/',
-          github: 'https://github.com/EHuq/expense-tracker',
+          link: 'https://nolosses.netlify.com/',
+          github: 'https://github.com/EHuq/nolosses',
           visible: true,
           demo: true,
 
           selected: false,
           resume: [
             <li className='points'>
-              Developed a responsive <b>MERN</b> app with{' '}
-              <b>MongoDB, Express, React,</b> and <b>NodeJs</b>
+              Developed a responsive app with <b>Vue, Firebase, Vuex</b> and{' '}
+              <b>NodeJs</b>
             </li>,
             <li className='points'>
-              Integrated backend built with <b>NodeJs</b> and <b>Express </b>
-              with frontend built using <b>React</b>
-            </li>,
-            <li className='points'>
-              Utilized <b>Canva</b> to design a mobile-first design
+              Integrated backend built with <b>NodeJs</b> and <b>Firebase </b>
+              with frontend built using <b>Vue</b>, while managing state using{' '}
+              <b>Vuex</b>
             </li>,
           ],
           skills: [
