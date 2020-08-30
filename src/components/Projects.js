@@ -92,9 +92,9 @@ class Projects extends React.Component {
             </li>,
           ],
           skills: [
-            <div className='skillPoints'>React</div>,
-            <div className='skillPoints'>MongoDB</div>,
-            <div className='skillPoints'>Express</div>,
+            <div className='skillPoints'>Vue</div>,
+            <div className='skillPoints'>Vuex</div>,
+            <div className='skillPoints'>Firebase</div>,
             <div className='skillPoints'>NodeJs</div>,
           ],
         },
