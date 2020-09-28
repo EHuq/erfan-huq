@@ -11,6 +11,36 @@ class Projects extends React.Component {
     this.state = {
       items: [
         {
+          id: 9,
+          title: 'Clay',
+          // imgSrc: sortingVisualizer,
+          link: 'https://github.com/EHuq/Clay',
+          github: 'https://github.com/EHuq/Clay',
+          visible: true,
+          demo: false,
+          selected: false,
+          resume: [
+            <li className='points'>
+              Built and designed an open-source 3D graphics engine with movement
+              capabilities from scratch using <b>C++</b> implementing
+              <b>Object-Oriented Programming</b> principles and linear algebra
+              to simulate movement within a 3D space
+            </li>,
+            <li className='points'>
+              Created <b>client-facing API</b> to handle user-inputted objects
+              in order to project them to 2D rasterizations
+            </li>,
+            <li className='points'>
+              Used <b>Git</b> for version control with adherence to best source
+              control principles in a concentrated group of developers
+            </li>,
+          ],
+          skills: [
+            <div className='skillPoints'>C++</div>,
+            <div className='skillPoints'>OOP</div>,
+          ],
+        },
+        {
           id: 8,
           title: 'frauddit - A reddit Clone',
           // imgSrc: sortingVisualizer,
