@@ -9,7 +9,7 @@ class AboutMe extends React.Component {
   }
 
   render() {
-    const CoopDate = 'December 2020';
+    const CoopDate = 'January 2021';
     return (
       <div
         id='about'
@@ -59,18 +59,19 @@ class AboutMe extends React.Component {
               }}
             >
               <p>
-                Hey, I'm Erfan Huq, in case you couldn’t tell by the massive
-                bold name staring at you above. I have a passion for{' '}
+                Hey, I'm Erfan Huq! I have a passion for{' '}
                 <b>software development</b>, both
                 <b> front-end</b> and <b>back-end</b>. One of my life goals,
                 however, is to work on projects involving
-                <b> Artificial Intelligence</b> and <b>autonomous vehicles</b>.
-                I am also a team player with a strong aptitude for technology, a
-                hunger for solving problems, and always seeking new challenges.
+                <b> artificial intelligence</b> and <b>autonomous vehicles</b>.
+                I am also a personable team player with a strong aptitude for
+                technology, a hunger for solving problems, and always seeking
+                new challenges.
+              </p>
+              <p>
                 I am currently seeking new co-op roles starting{' '}
-                <b>{CoopDate}</b>. Please feel free to reach out if you are
-                looking to collaborate or know of any opportunities aligning
-                with my interests!
+                <b>{CoopDate}</b>. Feel free to reach out if you are looking to
+                collaborate or know of any cool opportunities!
               </p>
             </div>
           </MediaQuery>
