@@ -148,7 +148,7 @@ code {
 
 .dates {
   display: block;
-  color: white;
+  color: #ffa600;
   /* justify-content: end; */
   margin: auto 0px;
   transition: all 200ms ease-in-out;
