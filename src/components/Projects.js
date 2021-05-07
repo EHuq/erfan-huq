@@ -20,24 +20,24 @@ class Projects extends React.Component {
           demo: false,
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Built and designed an open-source 3D graphics engine with movement
               capabilities from scratch using <b>C++</b> implementing
               <b>Object-Oriented Programming</b> principles and linear algebra
               to simulate movement within a 3D space
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Created <b>client-facing API</b> to handle user-inputted objects
               in order to project them to 2D rasterizations
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Used <b>Git</b> for version control with adherence to best source
               control principles in a concentrated group of developers
             </li>,
           ],
           skills: [
-            <div className='skillPoints'>C++</div>,
-            <div className='skillPoints'>OOP</div>,
+            <div className='skillPoints-projects'>C++</div>,
+            <div className='skillPoints-projects'>OOP</div>,
           ],
         },
         {
@@ -51,23 +51,23 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Developed a working clone of reddit with <b>Vue</b> and{' '}
               <b>Firebase</b> in <b>VS Code</b> in coordination with{' '}
               <b>Firebase Cloud Functions</b>
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Utilized <b>Firebase</b> to authorize users, and create required{' '}
               schemas
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Used <b>Git</b> to version control and practiced proper source
               control principles
             </li>,
           ],
           skills: [
-            <div className='skillPoints'>Vue</div>,
-            <div className='skillPoints'>Firebase</div>,
+            <div className='skillPoints-projects'>Vue</div>,
+            <div className='skillPoints-projects'>Firebase</div>,
           ],
         },
         {
@@ -81,23 +81,23 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Developed a responsive messaging application with{' '}
               <b>CSS, HTML,</b> and <b>Vanilla JavaScript</b> in <b>VS Code</b>{' '}
               in coordination with <b>Express</b>, <b>Socket.io</b>, and{' '}
               <b>NodeJs</b>
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Used <b>Git</b> to version control and practiced proper source
               control principles
             </li>,
-            <li className='points'>Updates in real-time for multiple users</li>,
+            <li className='pointsProjects'>Updates in real-time for multiple users</li>,
           ],
           skills: [
-            <div className='skillPoints'>HTML5</div>,
-            <div className='skillPoints'>CSS3</div>,
-            <div className='skillPoints'>JavaScript</div>,
-            <div className='skillPoints'>Express</div>,
+            <div className='skillPoints-projects'>HTML5</div>,
+            <div className='skillPoints-projects'>CSS3</div>,
+            <div className='skillPoints-projects'>JavaScript</div>,
+            <div className='skillPoints-projects'>Express</div>,
           ],
         },
         {
@@ -111,21 +111,21 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Developed a responsive app with <b>Vue, Firebase, Vuex</b> and{' '}
               <b>NodeJs</b>
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Integrated backend built with <b>NodeJs</b> and <b>Firebase </b>
               with frontend built using <b>Vue</b>, while managing state using{' '}
               <b>Vuex</b>
             </li>,
           ],
           skills: [
-            <div className='skillPoints'>Vue</div>,
-            <div className='skillPoints'>Vuex</div>,
-            <div className='skillPoints'>Firebase</div>,
-            <div className='skillPoints'>NodeJs</div>,
+            <div className='skillPoints-projects'>Vue</div>,
+            <div className='skillPoints-projects'>Vuex</div>,
+            <div className='skillPoints-projects'>Firebase</div>,
+            <div className='skillPoints-projects'>NodeJs</div>,
           ],
         },
         {
@@ -139,16 +139,16 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Developed a responsive site using <b>React</b> in <b>VS Code</b>{' '}
               to fetch weather data from across the world in real-time using the
               Open Weather API
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Cloned previous project from <b>Vue</b> to <b>React</b>
             </li>,
           ],
-          skills: [<div className='skillPoints'>React</div>],
+          skills: [<div className='skillPoints-projects'>React</div>],
         },
         {
           id: 5,
@@ -161,17 +161,17 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Developed a responsive site using <b>Vue</b> in <b>VS Code</b> to
               fetch weather data from across the world in real-time using the
               Open Weather API
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Created a mobile-first design using <b>Canva</b> and ensured
               accuracy of data by thorough testing
             </li>,
           ],
-          skills: [<div className='skillPoints'>Vue</div>],
+          skills: [<div className='skillPoints-projects'>Vue</div>],
         },
 
         {
@@ -185,16 +185,16 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Built site using <b>React</b> to track the statistics related to
               the Coronavirus epidemic
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Utilized an API to fetch coronavirus data, and Material-UI to
               create visualizations of said data
             </li>,
           ],
-          skills: [<div className='skillPoints'>React</div>],
+          skills: [<div className='skillPoints-projects'>React</div>],
         },
         {
           id: 3,
@@ -207,12 +207,12 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Developed visualizations using <b>Python</b> with <b>PyGame </b>
               for a variety of sorting algorithms
             </li>,
           ],
-          skills: [<div className='skillPoints'>Python</div>],
+          skills: [<div className='skillPoints-projects'>Python</div>],
         },
         {
           id: 2,
@@ -225,12 +225,12 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Utilized <b>Python</b> in <b>PyCharm</b>, implementing a
               breadth-first algorithm to solve a given maze
             </li>,
           ],
-          skills: [<div className='skillPoints'>Python</div>],
+          skills: [<div className='skillPoints-projects'>Python</div>],
         },
         {
           id: 1,
@@ -243,18 +243,18 @@ class Projects extends React.Component {
 
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Created a single player snake game in <b>Java</b> using
               <b> Object Oriented Programming</b> principles
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Built user interface using <b>Java Swing</b> in
               <b> Netbeans</b> development environment
             </li>,
           ],
           skills: [
-            <div className='skillPoints'>Java</div>,
-            <div className='skillPoints'>Java Swing</div>,
+            <div className='skillPoints-projects'>Java</div>,
+            <div className='skillPoints-projects'>Java Swing</div>,
           ],
         },
         {
@@ -267,23 +267,23 @@ class Projects extends React.Component {
           demo: false,
           selected: false,
           resume: [
-            <li className='points'>
+            <li className='pointsProjects'>
               Designed an event driven embedded system to mix multiple drinks{' '}
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Implemented code to update drink levels in each container stored
               in a file
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Tested program using <b>unit testing</b> and{' '}
               <b>integration testing</b>
             </li>,
-            <li className='points'>
+            <li className='pointsProjects'>
               Documented methods and designed system flow diagrams using{' '}
               <b>UML</b>
             </li>,
           ],
-          skills: [<div className='skillPoints'>RobotC</div>],
+          skills: [<div className='skillPoints-projects'>RobotC</div>],
         },
       ],
     };
@@ -296,7 +296,7 @@ class Projects extends React.Component {
         style={{
           fontFamily: 'Poppins-Medium',
           textAlign: 'center',
-          backgroundColor: '#28023D',
+          backgroundColor: 'white',
           paddingBottom: '1px',
           paddingTop: '1px',
         }}
@@ -334,7 +334,7 @@ class Projects extends React.Component {
                 <div style={styles.description}>
                   <div className='title-container'>
                     <a
-                      className='card-title'
+                      className='card-title-projects'
                       href={item.link}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -414,7 +414,7 @@ class Projects extends React.Component {
                 >
                   <div className='title-container'>
                     <a
-                      className='card-title'
+                      className='card-title-projects'
                       href={item.link}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -501,7 +501,7 @@ class Projects extends React.Component {
                 >
                   <div className='title-container'>
                     <a
-                      className='card-title'
+                      className='card-title-projects'
                       href={item.link}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -584,14 +584,14 @@ const styles = {
     margin: '30px 0 0 0',
     paddingTop: '10px',
     fontSize: '2rem',
-    color: '#EEEEEE',
+    color: 'black',
     textAlign: 'left',
     fontWeight: '550',
   },
 
   container: {
     justifyContent: 'center',
-    width: '60%',
+    width: '75%',
     margin: '0 auto',
   },
 
@@ -605,16 +605,16 @@ const styles = {
     alignItems: 'center',
     position: 'relative',
     top: '45px',
-    backgroundColor: '#FFA600',
+    backgroundColor: '#28023D',
   },
   description: {
-    margin: '0 0 5% 20%',
+    margin: '0 0 5% 10%',
     textAlign: 'left',
     padding: '1rem',
-    color: '#EEEEEE',
+    color: 'black',
   },
   block: {
-    backgroundColor: '#FFA600',
+    backgroundColor: '#28023D',
     borderRadius: '15px 15px',
     margin: '0 0 0 0',
     width: '75px',

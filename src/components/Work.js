@@ -115,8 +115,8 @@ class Work extends React.Component {
                   }}
                 ></div>
                 <div style={styles.description}>
-                  <div className='title-container'>
-                    <a
+                  <div className='title-container-work'>
+                    <div
                       className='card-title'
                       href={item.link}
                       target='_blank'
@@ -126,8 +126,8 @@ class Work extends React.Component {
                       }}
                     >
                       {item.title}
-                    </a>
-                    <div className='iconContainer'>
+                    </div>
+                    <div className='dates'>
                       {item.duration}
                     </div>
                   </div>
@@ -171,8 +171,8 @@ class Work extends React.Component {
                     paddingTop: '2rem',
                   }}
                 >
-                  <div className='title-container'>
-                    <a
+                  <div className='title-container-work'>
+                    <div
                       className='card-title'
                       href={item.link}
                       target='_blank'
@@ -182,8 +182,8 @@ class Work extends React.Component {
                       }}
                     >
                       {item.title}
-                    </a>
-                    <div className='iconContainer'>
+                    </div>
+                    <div className='dates'>
                       {item.duration}
                     </div>
                   </div>
@@ -234,8 +234,8 @@ class Work extends React.Component {
                     marginTop: '-10px',
                   }}
                 >
-                  <div className='title-container'>
-                    <a
+                  <div className='title-container-work'>
+                    <div
                       className='card-title'
                       href={item.link}
                       target='_blank'
@@ -245,8 +245,8 @@ class Work extends React.Component {
                       }}
                     >
                       {item.title}
-                    </a>
-                    <div className='iconContainer'>
+                    </div>
+                    <div className='dates'>
                       {item.duration}
                     </div>
                   </div>
@@ -302,7 +302,7 @@ const styles = {
 
   container: {
     justifyContent: 'center',
-    width: '60%',
+    width: '75%',
     margin: '0 auto',
   },
 
@@ -319,7 +319,7 @@ const styles = {
     backgroundColor: '#FFA600',
   },
   description: {
-    margin: '0 0 5% 20%',
+    margin: '0 0 5% 10%',
     textAlign: 'left',
     padding: '1rem',
     color: '#EEEEEE',
