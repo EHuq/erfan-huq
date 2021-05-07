@@ -1,6 +1,7 @@
 import React from "react";
 import Summary from "../components/Summary";
 import Projects from "../components/Projects";
+import Work from "../components/Work";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Contacts from "../pages/Contacts"
@@ -22,6 +23,7 @@ function Home(props) {
       />
       <AboutMe />
       <Skills />
+      <Work />
       <Projects />
       <Contacts />
     </div>
