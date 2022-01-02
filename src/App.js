@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 
+import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);

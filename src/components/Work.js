@@ -10,10 +10,32 @@ class Work extends React.Component {
     super(props);
     this.state = {
       items: [
-        
+        {
+          id: 3,
+          title: 'Ford, Software Developer',
+          duration: 'January 2021 - Present',
+          resume: [
+            <li className='points'>
+              Implemented new functionalities using <b>React</b> and <b>JavaScript</b>
+            </li>,
+            <li className='points'>
+              Increased testing infrastructure by <b>5%</b> using <b>Jest</b>
+            </li>,
+            <li className='points'>
+              Worked with a distributed team under <b>Agile</b> principles and utilized appropriate version control protocols with
+              <b> Git </b> 
+              </li>,
+          ],
+          skills: [
+            <div className='skillPoints'>React</div>,
+            <div className='skillPoints'>Javascript</div>,
+            <div className='skillPoints'>Jest</div>,
+            <div className='skillPoints'>MQTT</div>,
+          ],
+        },
         {
           id: 2,
-          title: 'University of Waterloo, Lead Full Stack Developer',
+          title: 'University of Waterloo, Full Stack Developer',
           duration: 'January 2021 - Present',
           resume: [
             <li className='points'>
