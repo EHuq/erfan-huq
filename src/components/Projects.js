@@ -11,7 +11,7 @@ class Projects extends React.Component {
     this.state = {
       items: [
         {
-          id: 9,
+          id: 11,
           title: 'Clay',
           // imgSrc: sortingVisualizer,
           link: 'https://github.com/EHuq/Clay',
@@ -41,7 +41,41 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 8,
+          id: 10,
+          title: 'Ultimate Tag',
+          // imgSrc: sortingVisualizer,
+          link: 'https://github.com/EHuq/UltimateTag',
+          github: 'https://github.com/EHuq/UltimateTag',
+          visible: false,
+          demo: false,
+          selected: false,
+          resume: [
+            <li className='pointsProjects'>
+              Currently in progress
+            </li>,
+            <li className='pointsProjects'>
+              An app to allow adults to fully enjoy the game of tag in an open space as large as they want
+            </li>,
+            <li className='pointsProjects'>
+              Used <b>Flask </b> to interface with remote <b>MongoDB </b>servers in order to achieve consistently stable location data of multiple users during different concurrent games
+            </li>,
+            <li className='pointsProjects'>
+              Simplistic minimalist design with <b> React Native</b>
+            </li>,
+            <li className='pointsProjects'>
+              Will be published in the Play Store and the App Store
+            </li>,
+          ],
+          skills: [
+            <div className='skillPoints-projects'>Flask</div>,
+            <div className='skillPoints-projects'>React Native</div>,
+            <div className='skillPoints-projects'>Python</div>,
+            <div className='skillPoints-projects'>MongoDB</div>,
+            <div className='skillPoints-projects'>OOP</div>,
+          ],
+        },
+        {
+          id: 9,
           title: 'frauddit - A reddit Clone',
           // imgSrc: sortingVisualizer,
           link: 'https://frauddit.netlify.app/',
@@ -71,7 +105,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 7,
+          id: 8,
           title: 'Chattarama',
           // imgSrc: sortingVisualizer,
           link: 'https://chattarama.herokuapp.com/',
@@ -101,7 +135,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 6,
+          id: 7,
           title: 'No Losses - An Expense Tracker',
           // imgSrc: sortingVisualizer,
           link: 'https://nolosses.netlify.com/',
@@ -129,7 +163,7 @@ class Projects extends React.Component {
           ],
         },
         {
-          id: 5,
+          id: 6,
           title: 'Weather App React Clone',
           // imgSrc: sortingVisualizer,
           link: 'https://weatherinreact.netlify.app/',
