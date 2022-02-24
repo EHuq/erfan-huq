@@ -44,14 +44,14 @@ class Projects extends React.Component {
           id: 10,
           title: 'Ultimate Tag',
           // imgSrc: sortingVisualizer,
-          link: 'https://github.com/EHuq/UltimateTag',
+          link: 'https://github.com/EHuq/',
           github: 'https://github.com/EHuq/UltimateTag',
           visible: false,
           demo: false,
           selected: false,
           resume: [
             <li className='pointsProjects'>
-              Currently in progress
+              Currently in progress github repo currently private
             </li>,
             <li className='pointsProjects'>
               An app to allow adults to fully enjoy the game of tag in an open space as large as they want
