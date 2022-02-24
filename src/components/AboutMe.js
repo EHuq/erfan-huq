@@ -9,7 +9,7 @@ class AboutMe extends React.Component {
   }
 
   render() {
-    const CoopDate = 'September 2021';
+    const CoopDate = 'May 2022';
     return (
       <div
         id='about'

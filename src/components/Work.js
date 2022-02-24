@@ -12,43 +12,48 @@ class Work extends React.Component {
       items: [
         {
           id: 3,
-          title: 'Ford, Software Developer',
-          duration: 'January 2021 - Present',
+          title: 'Software Developer @ Ford',
+          duration: 'September 2021 - January 2022',
           resume: [
             <li className='points'>
-              Implemented new functionalities using <b>React</b> and <b>JavaScript</b>
+              Developed components for the overhaul of a vehicle infotainment screen in <b>React</b> and debugged features by applying <b>OOP</b>
             </li>,
             <li className='points'>
-              Increased testing infrastructure by <b>5%</b> using <b>Jest</b>
+              Configured <b>MQTT</b> broker to sent commands and receive events from infotainment device
             </li>,
             <li className='points'>
-              Worked with a distributed team under <b>Agile</b> principles and utilized appropriate version control protocols with
-              <b> Git </b> 
-              </li>,
+              Increased Towing Team's testing coverage by <b>5%</b> using <b>Jest</b>
+            </li>,
+            <li className='points'>
+              Consistenly met deadlines while working with a distributed team under <b>AGILE</b> principles
+            </li>,
           ],
           skills: [
             <div className='skillPoints'>React</div>,
             <div className='skillPoints'>Javascript</div>,
             <div className='skillPoints'>Jest</div>,
             <div className='skillPoints'>MQTT</div>,
+            <div className='skillPoints'>OOP</div>,
           ],
         },
         {
           id: 2,
-          title: 'University of Waterloo, Full Stack Developer',
-          duration: 'January 2021 - Present',
+          title: 'Full Stack Developer @ University of Waterloo',
+          duration: 'January 2021 - September 2021',
           resume: [
             <li className='points'>
-              Designed and Implemented multiple
-               web pages using <b>Vue</b> and <b>PHP</b>
+              Designed and built multiple
+              responsive web pages using <b>Vue</b>
+            </li>,
+            <li className='points'>
+              Developed a <b>PHP</b> API to store and retrieve data from a remote <b>MySQL</b> database
             </li>,
             <li className='points'>
               Used <b>ReactJS</b> in partnership with <b>Tailwind CSS</b>
-               to build a website
+              to build a stand-alone website
             </li>,
             <li className='points'>
-              Developed a <b>PHP API</b> to pull data from a <b>MySQL</b> database 
-              and build visualizations using <b>LeafletJS </b>and <b>MapBox</b>
+              Built visualizations using <b>LeafletJS </b>and <b>MapBox</b> to show the streamflow in Idaho, Waterloo, and other cities
             </li>,
           ],
           skills: [
@@ -60,36 +65,36 @@ class Work extends React.Component {
         },
         {
           id: 1,
-          title: 'BGPC, Full Stack Developer',
+          title: 'Full Stack Developer @ BGPC (STEALTH)',
           duration: 'July 2020 - September 2020',
           resume: [
             <li className='points'>
-              Implemented web pages using <b>Vue </b> 
-              with <b>Tailwind CSS</b> from
-               concept through to deployment
+              Built custom user authentification functions using the <b>AWS Lambda</b> functionality
             </li>,
             <li className='points'>
-              Collaborated with team members to implement new 
+              Collaborated with team members to implement new
               features and functionalities for internal
-              development using <b>Ajax, Typescript, and JSON</b> 
+              development using <b>Typescript</b>
             </li>,
             <li className='points'>
-              Designed backend infrastructure for full stack 
-              integration with frontend components
+              Implemented web pages using <b>Vue </b>
+              with <b>Tailwind CSS</b> from
+              concept through to deployment
             </li>,
             <li className='points'>
-              Worked with a distributed team and utilized appropriate 
-              version control protocols with <b>Git</b> 
+              Worked with a distributed team and utilized appropriate
+              version control protocols with <b>Git</b>
             </li>,
           ],
           skills: [
             <div className='skillPoints'>Vue</div>,
-            <div className='skillPoints'>OOP</div>,
-            <div className='skillPoints'>TailwindCSS</div>,
+            <div className='skillPoints'>AWS</div>,
             <div className='skillPoints'>Typescript</div>,
+            <div className='skillPoints'>TailwindCSS</div>,
+            <div className='skillPoints'>OOP</div>,
           ],
         },
-        
+
       ],
     };
   }
