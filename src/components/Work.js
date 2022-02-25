@@ -19,7 +19,7 @@ class Work extends React.Component {
               Developed components for the overhaul of a vehicle infotainment screen in <b>React</b> and debugged features by applying <b>OOP</b>
             </li>,
             <li className='points'>
-              Configured <b>MQTT</b> broker to sent commands and receive events from infotainment device
+              Configured <b>MQTT</b> broker to send commands and receive events from infotainment device
             </li>,
             <li className='points'>
               Increased Towing Team's testing coverage by <b>5%</b> using <b>Jest</b>
