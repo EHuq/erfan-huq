@@ -9,7 +9,7 @@ class AboutMe extends React.Component {
   }
 
   render() {
-    const CoopDate = 'May 2022';
+    const CoopDate = 'Jan 2023';
     return (
       <div
         id='about'
@@ -61,12 +61,13 @@ class AboutMe extends React.Component {
               <p>
                 Hey, I'm Erfan Huq! I have a passion for{' '}
                 <b>software development</b>, both
-                <b> front-end</b> and <b>back-end</b>. One of my life goals,
-                however, is to work on projects involving
-                <b> artificial intelligence</b> and <b>autonomous vehicles</b>.
-                I am also a personable team player with a strong aptitude for
-                technology, a hunger for solving problems, and always seeking
-                new challenges.
+                <b> front-end</b> and <b>back-end</b>. I have tons of experience{' '}
+                with both, check it out down below. One of my life goals,
+                however, is to work on professional projects involving
+                <b> artificial intelligence</b> and{' '}
+                <b>blockchain</b>. I am also a personable team
+                player with a strong aptitude for technology, a hunger for
+                solving problems, and always seeking new challenges.
               </p>
               <p>
                 I am currently seeking new co-op roles starting{' '}
@@ -88,10 +89,11 @@ class AboutMe extends React.Component {
                   <p>
                     Hey, I'm Erfan Huq! I have a passion for{' '}
                     <b>software development</b>, both
-                    <b> front-end</b> and <b>back-end</b>. One of my life goals,
-                    however, is to work on projects involving
+                    <b> front-end</b> and <b>back-end</b>. I have tons of experience{' '}
+                    with both, check it out down below. One of my life goals,
+                    however, is to work on professional projects involving
                     <b> artificial intelligence</b> and{' '}
-                    <b>autonomous vehicles</b>. I am also a personable team
+                    <b>blockchain</b>. I am also a personable team
                     player with a strong aptitude for technology, a hunger for
                     solving problems, and always seeking new challenges.
                   </p>

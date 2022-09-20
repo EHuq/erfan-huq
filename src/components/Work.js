@@ -11,25 +11,54 @@ class Work extends React.Component {
     this.state = {
       items: [
         {
+          id: 4,
+          title: 'Software Developer @ Miovision',
+          duration: 'May 2022 - September 2022',
+          resume: [
+            <li className='points'>
+              Developed a next-generation portable video recorder and vehicle detection system with <b>TypeScript</b>
+            </li>,
+            <li className='points'>
+              Independently implemented a front-facing queue-based recorder scheduler in <b>Angular</b>, with backend <b>REST API</b> calls with <b>NodeJs</b>
+            </li>,
+            <li className='points'>
+              Used <b>UNIX Shell Scripting</b> to automate the collection of all internal debug logs, speeding up QA testing and debugging
+            </li>,
+            <li className='points'>
+              Utilized <b>GStreamer</b> with <b>nvoverlaysink</b> to stream lossless video directly from camera to device
+            </li>,
+          ],
+          skills: [
+            <div className='skillPoints'>Angular</div>,
+            <div className='skillPoints'>NodeJs</div>,
+            <div className='skillPoints'>TypeScript</div>,
+            <div className='skillPoints'>Jest</div>,
+            <div className='skillPoints'>GStreamer</div>,
+            <div className='skillPoints'>UNIX</div>,
+          ],
+        },
+        {
           id: 3,
           title: 'Software Developer @ Ford',
           duration: 'September 2021 - January 2022',
           resume: [
             <li className='points'>
-              Developed components for the overhaul of a vehicle infotainment screen in <b>React</b> and debugged features by applying <b>OOP</b>
+              Developed various UI components in <b>React</b> and internal features in <b>JavaScript</b> to increase efficiency
             </li>,
             <li className='points'>
               Configured <b>MQTT</b> broker to send commands and receive events from infotainment device
             </li>,
             <li className='points'>
-              Increased Towing Team's testing coverage by <b>5%</b> using <b>Jest</b>
+              Implemented test driven development with <b>Jest</b> to the Towing subteam, increasing test coverage by 20%
             </li>,
             <li className='points'>
-              Consistenly met deadlines while working with a distributed team under <b>AGILE</b> principles
+              Consistenly met deadlines while working with a distributed team under <b>AGILE</b> principles and
+              {' '}utilized appropriate version control protocols with <b>Git</b>
             </li>,
           ],
           skills: [
             <div className='skillPoints'>React</div>,
+            <div className='skillPoints'>NodeJS</div>,
             <div className='skillPoints'>Javascript</div>,
             <div className='skillPoints'>Jest</div>,
             <div className='skillPoints'>MQTT</div>,
@@ -60,6 +89,7 @@ class Work extends React.Component {
             <div className='skillPoints'>Vue</div>,
             <div className='skillPoints'>React</div>,
             <div className='skillPoints'>TailwindCSS</div>,
+            <div className='skillPoints'>Javascript</div>,
             <div className='skillPoints'>PHP</div>,
           ],
         },
