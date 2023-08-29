@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link as LinkScroll } from 'react-scroll';
@@ -127,6 +127,17 @@ class App extends React.Component {
                   duration={400}
                 >
                   Projects
+                </LinkScroll>
+                <LinkScroll
+                  className='nav-link'
+                  to='Work'
+                  activeClass='active border-bottom'
+                  spy={true}
+                  smooth={true}
+                  offset={-57}
+                  duration={400}
+                >
+                  Work
                 </LinkScroll>
                 <LinkScroll
                   className='nav-link'
