@@ -119,17 +119,6 @@ class App extends React.Component {
                 </LinkScroll>
                 <LinkScroll
                   className='nav-link'
-                  to='projects'
-                  activeClass='active border-bottom'
-                  spy={true}
-                  smooth={true}
-                  offset={-57}
-                  duration={400}
-                >
-                  Projects
-                </LinkScroll>
-                <LinkScroll
-                  className='nav-link'
                   to='Work'
                   activeClass='active border-bottom'
                   spy={true}
@@ -138,6 +127,17 @@ class App extends React.Component {
                   duration={400}
                 >
                   Work
+                </LinkScroll>
+                <LinkScroll
+                  className='nav-link'
+                  to='projects'
+                  activeClass='active border-bottom'
+                  spy={true}
+                  smooth={true}
+                  offset={-57}
+                  duration={400}
+                >
+                  Projects
                 </LinkScroll>
                 <LinkScroll
                   className='nav-link'

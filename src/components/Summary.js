@@ -1,8 +1,8 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
 
-const resume = '/Resume/ErfanHuq_Resume.pdf';
 function Summary(props) {
+  const resume = '/Resume/ErfanHuq_Resume.pdf';
   return (
     <Jumbotron
       className='jumbotron-fluid mainPage'
