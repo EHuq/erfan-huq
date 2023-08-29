@@ -2,9 +2,6 @@ import React from 'react';
 
 import MediaQuery from 'react-responsive';
 
-// import visible from '../assets/images/visible.png';
-// import notvisible from '../assets/images/not-visible.png';
-
 class Projects extends React.Component {
   constructor(props) {
     super(props);
@@ -328,13 +325,6 @@ class Projects extends React.Component {
       <div
         id='projects'
         className='projectsContainer'
-        // style={{
-        //   fontFamily: 'Poppins-Medium',
-        //   textAlign: 'center',
-        //   backgroundColor: 'white',
-        //   paddingBottom: '1px',
-        //   paddingTop: '1px',
-        // }}
       >
         <div style={styles.container}>
           <div style={{ ...styles.block}}></div>
@@ -424,7 +414,6 @@ class Projects extends React.Component {
                   ))}
                   <div
                     style={{
-                      // ...styles.description,
                       display: 'flex',
                       color: 'red',
                       margin: '0 -100px 0 0',
@@ -504,7 +493,6 @@ class Projects extends React.Component {
                   ))}
                   <div
                     style={{
-                      // ...styles.description,
                       display: 'flex',
                       color: 'red',
                       margin: '0 -100px 0 0',
@@ -593,7 +581,6 @@ class Projects extends React.Component {
                   ))}
                   <div
                     style={{
-                      // ...styles.description,
                       display: 'flex',
                       color: 'red',
                       margin: '0 -100px 0 0',
@@ -628,7 +615,8 @@ const styles = {
     justifyContent: 'center',
     width: '75%',
     margin: '0 auto',
-    paddingTop: '30px'
+    paddingTop: '30px',
+    paddingBottom: '20px'
   },
 
   box: {
@@ -658,8 +646,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'relative', //change to sticky once I figurre out
-    //how to change the circles to sticky too
+    position: 'relative', 
     top: '30px',
   },
 };
