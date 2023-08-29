@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
-import resume from '../assets/Resume/Resume.pdf';
 
+const resume = '/Resume/ErfanHuq_Resume.pdf';
 function Summary(props) {
   return (
     <Jumbotron
@@ -17,7 +17,7 @@ function Summary(props) {
               width: '90%',
               margin: '4rem',
               marginTop: '7rem',
-              color: '#EEEEEE',
+              color: '#ffb4b2',
             }}
           >
             {props.title && (
@@ -58,7 +58,7 @@ function Summary(props) {
                   <button className='button'>
                     <a
                       className='link'
-                      href={resume}
+                      href={process.env.PUBLIC_URL + resume}
                       target='_blank'
                       rel='noopener noreferrer'
                     >

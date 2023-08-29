@@ -2,6 +2,33 @@ import React from 'react';
 
 import MediaQuery from 'react-responsive';
 
+const AboutMeDescription = ({CoopDate}) => {
+  return ( 
+    <>
+      <p>
+        Hey, I'm Erfan Huq! I have a passion for{' '}
+        <b>software development</b>, both
+        <b> front-end</b> and <b>back-end</b>. I have tons of experience{' '}
+        with both, check it out down below. One of my life goals,
+        however, is to work on professional projects involving
+        <b> artificial intelligence</b> and{' '}
+        <b>blockchain</b>. I am also a personable team
+        player with a strong aptitude for technology, a hunger for
+        solving problems, and always seeking new challenges.
+      </p>
+      <p>I enjoy combining mathematical, historic, and geographic
+        {' '}context to analyze and predict behaviours
+        {' '}of large scale systems. I am also a big proponent of helping
+        {' '}low income areas, so if that interests you let's talk!  
+      </p>
+      <p>
+        I am currently seeking employment beginning{' '}
+        <b>{CoopDate}</b>. Feel free to reach out if you are looking to
+        collaborate or know of any cool opportunities!
+      </p>
+    </>
+  )
+}
 class AboutMe extends React.Component {
   constructor(props) {
     super(props);
@@ -9,14 +36,14 @@ class AboutMe extends React.Component {
   }
 
   render() {
-    const CoopDate = 'Jan 2023';
+    const CoopDate = 'May 2024';
     return (
       <div
         id='about'
         style={{
           fontFamily: 'Poppins-Medium',
           textAlign: 'center',
-          backgroundColor: '#28023D',
+          backgroundColor: '#ffb4b2',
           paddingBottom: '1px',
           paddingTop: '20px',
         }}
@@ -52,33 +79,17 @@ class AboutMe extends React.Component {
           </MediaQuery>
 
           <MediaQuery maxDeviceWidth={425}>
-            <div
-              style={{
+            <div style={{
                 ...styles.description,
                 margin: '25px 0 50px 0',
-              }}
-            >
-              <p>
-                Hey, I'm Erfan Huq! I have a passion for{' '}
-                <b>software development</b>, both
-                <b> front-end</b> and <b>back-end</b>. I have tons of experience{' '}
-                with both, check it out down below. One of my life goals,
-                however, is to work on professional projects involving
-                <b> artificial intelligence</b> and{' '}
-                <b>blockchain</b>. I am also a personable team
-                player with a strong aptitude for technology, a hunger for
-                solving problems, and always seeking new challenges.
-              </p>
-              <p>
-                I am currently seeking new co-op roles starting{' '}
-                <b>{CoopDate}</b>. Feel free to reach out if you are looking to
-                collaborate or know of any cool opportunities!
-              </p>
+              }}>
+              <AboutMeDescription CoopDate={CoopDate} />
             </div>
           </MediaQuery>
           <MediaQuery minDeviceWidth={426}>
             <div style={styles.description}>
               <section>
+              
                 <div
                   style={{
                     ...styles.description,
@@ -86,22 +97,7 @@ class AboutMe extends React.Component {
                     padding: '0 10px',
                   }}
                 >
-                  <p>
-                    Hey, I'm Erfan Huq! I have a passion for{' '}
-                    <b>software development</b>, both
-                    <b> front-end</b> and <b>back-end</b>. I have tons of experience{' '}
-                    with both, check it out down below. One of my life goals,
-                    however, is to work on professional projects involving
-                    <b> artificial intelligence</b> and{' '}
-                    <b>blockchain</b>. I am also a personable team
-                    player with a strong aptitude for technology, a hunger for
-                    solving problems, and always seeking new challenges.
-                  </p>
-                  <p>
-                    I am currently seeking new co-op roles starting{' '}
-                    <b>{CoopDate}</b>. Feel free to reach out if you are looking
-                    to collaborate or know of any cool opportunities!
-                  </p>
+                  <AboutMeDescription CoopDate={CoopDate} />
                 </div>
               </section>
             </div>
@@ -117,7 +113,7 @@ const styles = {
     margin: '0 0 0 0',
     paddingTop: '10px',
     fontSize: '2rem',
-    color: '#EEEEEE',
+    color: '#691917',
     textAlign: 'left',
     fontWeight: '550',
   },
@@ -131,11 +127,11 @@ const styles = {
   description: {
     margin: '0 -100px 0 20%',
     textAlign: 'left',
-    color: '#EEEEEE',
+    color: '#691917',
     fontSize: '1.25rem',
   },
   block: {
-    backgroundColor: '#FFA600',
+    backgroundColor: '#bd5954',
     borderRadius: '15px 15px',
     margin: '0 0 0 0',
     width: '75px',

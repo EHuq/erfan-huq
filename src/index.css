@@ -68,7 +68,7 @@ code {
 }
 
 .card-title {
-  color: #eeeeee;
+  color: #691917;
   text-decoration: none;
   font-size: 1.5rem;
   margin: 0px !important;
@@ -82,7 +82,7 @@ code {
 }
 
 .card-title-projects {
-  color: black;
+  color: #691917;
   text-decoration: none;
   font-size: 1.5rem;
   margin: 0px;
@@ -104,6 +104,10 @@ code {
   min-height: calc(100vh - 162px);
   font-family: 'Poppins-Medium';
   transition: all 200ms ease-in-out;
+  text-align: 'center';
+  background-color: #ffb4b2;
+  padding-bottom: 1px;
+  padding-top: 20px;
 }
 
 .contacts {
@@ -113,21 +117,21 @@ code {
 }
 
 .points {
-  color: #eeeeee;
+  color: #691917;
   font-size: 1.2rem;
   font-family: 'Poppins-Medium';
   transition: all 200ms ease-in-out;
 }
 
 .pointsProject {
-  color: black;
+  color: #691917;
   font-size: 1.2rem;
   font-family: 'Poppins-Medium';
   transition: all 200ms ease-in-out;
 }
 
 .linkedCircles {
-  color: #ffa600;
+  color: #ffb4b2;
   text-decoration: none;
   margin: 0px;
   margin-right: 15px;
@@ -136,7 +140,7 @@ code {
 }
 
 .linkedCircles:hover {
-  color: #65009b;
+  color: #691917;
   text-decoration: none;
 }
 
@@ -149,14 +153,14 @@ code {
 
 .dates {
   display: block;
-  color: #ffa600;
+  color: #691917;
   /* justify-content: end; */
   margin: auto 0px;
   transition: all 200ms ease-in-out;
 }
 
 .visible {
-  color: black;
+  color: #691917;
   display: flex;
   text-decoration: none;
   margin-left: 50px;
@@ -177,35 +181,36 @@ code {
 
 .home-alt:hover {
   text-decoration: none;
-  color: #65009b;
+  color: #691917;
 }
 
 .button {
   position: relative;
-  background-color: #ffa600;
+  background-color: #ffb4b2;
   border-radius: 7px 7px;
-  border-color: #27003c;
+  border-width: 0px;
   margin-top: 20px;
   margin-right: 15px;
   margin-bottom: -100px;
   width: 150px;
+  padding: 10px;
   font-family: 'Poppins-Medium';
   transition: all 200ms ease-in-out;
 }
 
 .button:hover {
-  background-color: #65009b;
+  background-color: #bd5954;
 }
 
 .button:active {
-  background-color: #65009b;
+  background-color: #691917;
   outline: none;
   transform: scale(0.95);
 }
 
 .link {
   text-decoration: none;
-  color: #65009b;
+  color: #691917;
   font-size: 1.2rem;
   font-weight: 700;
   transition: all 200ms ease-in-out;
@@ -213,7 +218,7 @@ code {
 
 .button:hover .link {
   text-decoration: none;
-  color: #ffa600;
+  color: #ffb4b2;
 }
 
 .carousel {
@@ -232,24 +237,39 @@ code {
 
 .skillPoints {
   display: flex;
-  border: #ffa600 1px solid;
+  border: #691917 1px solid;
   border-radius: 5px;
-  background-color: #ffa600;
-  color: #65009b;
-  padding: 2px 5px;
+  background-color: #fef4e8;
+  color: #691917;
+  padding: 5px 10px;
   margin: 0px 5px 0px 5px;
   transition: all 200ms ease-in-out;
 }
 .skillPoints-projects {
   display: flex;
-  border: #ffa600 1px solid;
+  border: #691917 1px solid;
   border-radius: 5px;
-  background-color: white;
-  color: black;
-  padding: 2px 5px;
+  background-color: #ffb4b2;
+  color: #fef4e8;
+  padding: 5px 10px;
   margin: 0px 5px 0px 5px;
   transition: all 200ms ease-in-out;
 }
+
+.projectsContainer {
+  font-family: 'Poppins-Medium';
+  text-align: 'center';
+  background-color: #fef4e8;
+}
+
+.skills-container {
+  font-family: 'Poppins-Medium';
+  text-align: 'center';
+  padding-top: '50px';
+  background-color: #fef4e8;
+}
+
+.about
 
 @media only screen and (min-width: 1945px) {
   .points {

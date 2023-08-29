@@ -23,7 +23,7 @@ class Projects extends React.Component {
             <li className='pointsProjects'>
               Built and designed an open-source 3D graphics engine with movement
               capabilities from scratch using <b>C++</b> implementing
-              <b>Object-Oriented Programming</b> principles and linear algebra
+              <b> Object-Oriented Programming</b> principles and linear algebra
               to simulate movement within a 3D space
             </li>,
             <li className='pointsProjects'>
@@ -327,16 +327,17 @@ class Projects extends React.Component {
     return (
       <div
         id='projects'
-        style={{
-          fontFamily: 'Poppins-Medium',
-          textAlign: 'center',
-          backgroundColor: 'white',
-          paddingBottom: '1px',
-          paddingTop: '1px',
-        }}
+        className='projectsContainer'
+        // style={{
+        //   fontFamily: 'Poppins-Medium',
+        //   textAlign: 'center',
+        //   backgroundColor: 'white',
+        //   paddingBottom: '1px',
+        //   paddingTop: '1px',
+        // }}
       >
         <div style={styles.container}>
-          <div style={{ ...styles.block, marginTop: '30px' }}></div>
+          <div style={{ ...styles.block}}></div>
           <MediaQuery minDeviceWidth={1945}>
             <div
               style={{
@@ -618,7 +619,7 @@ const styles = {
     margin: '30px 0 0 0',
     paddingTop: '10px',
     fontSize: '2rem',
-    color: 'black',
+    color: '#691917',
     textAlign: 'left',
     fontWeight: '550',
   },
@@ -627,6 +628,7 @@ const styles = {
     justifyContent: 'center',
     width: '75%',
     margin: '0 auto',
+    paddingTop: '30px'
   },
 
   box: {
@@ -639,16 +641,16 @@ const styles = {
     alignItems: 'center',
     position: 'relative',
     top: '45px',
-    backgroundColor: '#28023D',
+    backgroundColor: '#bd5954',
   },
   description: {
     margin: '0 0 5% 10%',
     textAlign: 'left',
     padding: '1rem',
-    color: 'black',
+    color: '#691917',
   },
   block: {
-    backgroundColor: '#28023D',
+    backgroundColor: '#bd5954',
     borderRadius: '15px 15px',
     margin: '0 0 0 0',
     width: '75px',

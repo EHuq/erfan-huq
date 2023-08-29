@@ -11,9 +11,37 @@ class Work extends React.Component {
     this.state = {
       items: [
         {
+          id: 5,
+          title: 'Software Developer @ Aurora Solar',
+          duration: 'Jan 2023 - August 2023',
+          resume: [
+            <li className='points'>
+               Contributed to the whole migration of the Aurora CAD 3D Design Software spanning 2 quarters in the <b>React, Typescript</b>, and <b>Ruby on Rails</b> tech stack  
+            </li>,
+            <li className='points'>
+                	Led test coverage migration, transitioning <b>50+</b> tests in <b>two sprints</b>, fortifying software quality and robustness
+            </li>,
+            <li className='points'>
+              Directed end-to-end development of feature, orchestrating multi-developer collaboration and expanding <b>MobX</b> state management capabilities
+            </li>,
+            <li className='points'>
+              Collaborated with product managers, and designers to launch user-centric features, consistently receiving <b>positive customer engagement</b> over two quarters
+            </li>,
+            <li className='points'>
+              Developed an interactive system within the CAD application using <b>GraphQL</b>, enhancing user control over AI Roof tasks
+            </li>,
+          ],
+          skills: [
+            <div className='skillPoints'>React</div>,
+            <div className='skillPoints'>TypeScript</div>,
+            <div className='skillPoints'>NodeJS</div>,
+            <div className='skillPoints'>GraphQL</div>,
+          ],
+        },
+        {
           id: 4,
           title: 'Software Developer @ Miovision',
-          duration: 'May 2022 - September 2022',
+          duration: 'May 2022 - August 2022',
           resume: [
             <li className='points'>
               Developed a next-generation portable video recorder and vehicle detection system with <b>TypeScript</b>
@@ -46,10 +74,13 @@ class Work extends React.Component {
               Developed various UI components in <b>React</b> and internal features in <b>JavaScript</b> to increase efficiency
             </li>,
             <li className='points'>
+              Developed <b>React</b> Profiler to pinpoint and resolve unwanted re-renders, driving a <b>15%</b> increase in UI responsiveness and enhancing the user experience
+            </li>,
+            <li className='points'>
               Configured <b>MQTT</b> broker to send commands and receive events from infotainment device
             </li>,
             <li className='points'>
-              Implemented test driven development with <b>Jest</b> to the Towing subteam, increasing test coverage by 20%
+              Boosted test coverage by <b>20%</b> through extensive Jest testing for feature team
             </li>,
             <li className='points'>
               Consistenly met deadlines while working with a distributed team under <b>AGILE</b> principles and
@@ -68,18 +99,10 @@ class Work extends React.Component {
         {
           id: 2,
           title: 'Full Stack Developer @ University of Waterloo',
-          duration: 'January 2021 - September 2021',
+          duration: 'January 2021 - August 2021',
           resume: [
             <li className='points'>
-              Designed and built multiple
-              responsive web pages using <b>Vue</b>
-            </li>,
-            <li className='points'>
-              Developed a <b>PHP</b> API to store and retrieve data from a remote <b>MySQL</b> database
-            </li>,
-            <li className='points'>
-              Used <b>ReactJS</b> in partnership with <b>Tailwind CSS</b>
-              to build a stand-alone website
+              Spearheaded the end-to-end development of two web applications using <b>Vue, NodeJS and MySQL</b> with a custom <b>PHP API</b> for real-time data integration
             </li>,
             <li className='points'>
               Built visualizations using <b>LeafletJS </b>and <b>MapBox</b> to show the streamflow in Idaho, Waterloo, and other cities
@@ -87,16 +110,15 @@ class Work extends React.Component {
           ],
           skills: [
             <div className='skillPoints'>Vue</div>,
-            <div className='skillPoints'>React</div>,
-            <div className='skillPoints'>TailwindCSS</div>,
-            <div className='skillPoints'>Javascript</div>,
+            <div className='skillPoints'>NodeJS</div>,
+            <div className='skillPoints'>MySQL</div>,
             <div className='skillPoints'>PHP</div>,
           ],
         },
         {
           id: 1,
           title: 'Full Stack Developer @ BGPC (STEALTH)',
-          duration: 'July 2020 - September 2020',
+          duration: 'July 2020 - August 2020',
           resume: [
             <li className='points'>
               Built custom user authentification functions using the <b>AWS Lambda</b> functionality
@@ -136,13 +158,13 @@ class Work extends React.Component {
         style={{
           fontFamily: 'Poppins-Medium',
           textAlign: 'center',
-          backgroundColor: '#28023D',
+          backgroundColor: '#ffb4b2',
           paddingBottom: '1px',
           paddingTop: '1px',
         }}
       >
         <div style={styles.container}>
-          <div style={{ ...styles.block, marginTop: '30px' }}></div>
+          <div style={{ ...styles.block }}></div>
           <MediaQuery minDeviceWidth={1945}>
             <div
               style={{
@@ -195,6 +217,7 @@ class Work extends React.Component {
                           ...styles.description,
                           margin: '0 -100px 0 0',
                           padding: '0 10px',
+                          color: 'blue'
                         }}
                       >
                         {' '}
@@ -261,11 +284,11 @@ class Work extends React.Component {
                   ))}
                   <div
                     style={{
-                      // ...styles.description,
                       display: 'flex',
                       color: 'red',
                       margin: '0 -100px 0 0',
                       padding: '0 10px',
+                      ...styles.description,
                     }}
                   >
                     {item.skills.map((skill) => (
@@ -352,7 +375,7 @@ const styles = {
     margin: '30px 0 0 0',
     paddingTop: '10px',
     fontSize: '2rem',
-    color: '#EEEEEE',
+    color: '#691917',
     textAlign: 'left',
     fontWeight: '550',
   },
@@ -361,6 +384,7 @@ const styles = {
     justifyContent: 'center',
     width: '75%',
     margin: '0 auto',
+    paddingTop: '30px'
   },
 
   box: {
@@ -373,16 +397,16 @@ const styles = {
     alignItems: 'center',
     position: 'relative',
     top: '45px',
-    backgroundColor: '#FFA600',
+    backgroundColor: '#bd5954',
   },
   description: {
     margin: '0 0 5% 10%',
     textAlign: 'left',
     padding: '1rem',
-    color: '#EEEEEE',
-  },
+    color: '#691917',
+  }, 
   block: {
-    backgroundColor: '#FFA600',
+    backgroundColor: '#bd5954',
     borderRadius: '15px 15px',
     margin: '0 0 0 0',
     width: '75px',

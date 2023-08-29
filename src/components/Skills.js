@@ -7,10 +7,12 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import ReactIcon from '../assets/images/ReactIcon.png';
 import VueIcon from '../assets/images/VueIcon.png';
 import HTML5Icon from '../assets/images/HTML5Icon.png';
-import CSS3Icon from '../assets/images/CSS3Icon.png';
+import GraphqlIcon from '../assets/images/GraphqlIcon.png';
 import JSIcon from '../assets/images/JSIcon.png';
-import PythonIcon from '../assets/images/PythonIcon.jpg';
-import JavaIcon from '../assets/images/JavaIcon.jpg';
+import PythonIcon from '../assets/images/PythonIcon.png';
+import MongoIcon from '../assets/images/MongoIcon.png';
+import DockerIcon from '../assets/images/DockerIcon.png';
+import JavaIcon from '../assets/images/JavaIcon.png';
 import CPPIcon from '../assets/images/CPPIcon.png';
 import firebaseLogo from '../assets/images/firebaseLogo.png';
 import arrowLeft from '../assets/images/leftArrow.png';
@@ -26,11 +28,7 @@ class Skills extends React.Component {
     return (
       <div
         id='skills'
-        style={{
-          fontFamily: 'Poppins-Medium',
-          textAlign: 'center',
-          paddingTop: '50px',
-        }}
+        className='skills-container'
       >
         <div style={styles.container}>
           <div style={{ ...styles.block }}></div>
@@ -56,42 +54,71 @@ class Skills extends React.Component {
             </div>
           </MediaQuery>
         </div>
-        <div style={{ ...styles.container, margin: 'auto', marginTop: '30px' }}>
-          <Carousel
-            arrows
-            infinite
-            dots
-            slidesPerPage={3}
-            slidesPerScroll={1}
-            breakpoints={{
-              500: {
-                slidesPerPage: 1,
-                arrows: false,
-              },
-              900: {
-                slidesPerPage: 2,
-                arrows: false,
-              },
-            }}
-            arrowLeft={<img className='carouselArrows' src={arrowLeft} />}
-            arrowRight={<img className='carouselArrows' src={arrowRight} />}
-            addArrowClickHandler
-            className='carousel'
-          >
-            <img style={{ ...styles.images }} src={ReactIcon} />
-            <img style={{ ...styles.images }} src={VueIcon} />
-            <img style={{ ...styles.images }} src={CPPIcon} />
-            <img style={{ ...styles.images }} src={firebaseLogo} />
-            <img style={{ ...styles.images }} src={HTML5Icon} />
-            <img style={{ ...styles.images }} src={CSS3Icon} />
-            <img style={{ ...styles.images }} src={JSIcon} />
-            <img style={{ ...styles.images }} src={PythonIcon} />
-            <img style={{ ...styles.images }} src={JavaIcon} />
-          </Carousel>
+        <div style={{ ...styles.container, margin: 'auto'}}>
+          <>
+            <section style={{fontSize: '1.25rem', color:'#691917', marginBottom: '30px'}}>Proficient Tools</section>
+            <Carousel
+              arrows
+              infinite
+              slidesPerPage={4}
+              slidesPerScroll={1}
+              breakpoints={{
+                500: {
+                  slidesPerPage: 1,
+                  arrows: false,
+                },
+                900: {
+                  slidesPerPage: 2,
+                  arrows: false,
+                },
+              }}
+              arrowLeft={<img className='carouselArrows' src={arrowLeft} />}
+              arrowRight={<img className='carouselArrows' src={arrowRight} />}
+              addArrowClickHandler
+              className='carousel'
+            >
+              <img style={{ ...styles.images }} src={GraphqlIcon} />
+              <img style={{ ...styles.images }} src={ReactIcon} />
+              <img style={{ ...styles.images }} src={VueIcon} />
+              <img style={{ ...styles.images }} src={DockerIcon} />
+              <img style={{ ...styles.images }} src={MongoIcon} />
+              <img style={{ ...styles.images }} src={firebaseLogo} />
+              <img style={{ ...styles.images }} src={HTML5Icon} />
+            </Carousel>
+          </>
+          <div style={{marginTop: '60px'}}>
+            <section style={{fontSize: '1.25rem', color:'#691917', marginBottom: '30px'}}>Profiecient Languages</section>
+            <Carousel
+              arrows
+              infinite
+              slidesPerPage={4}
+              slidesPerScroll={1}
+              breakpoints={{
+                500: {
+                  slidesPerPage: 1,
+                  arrows: false,
+                },
+                900: {
+                  slidesPerPage: 2,
+                  arrows: false,
+                },
+              }}
+              arrowLeft={<img className='carouselArrows' src={arrowLeft} />}
+              arrowRight={<img className='carouselArrows' src={arrowRight} />}
+              addArrowClickHandler
+              className='carousel'
+            >
+              <img style={{ ...styles.images }} src={PythonIcon} />
+              <img style={{ ...styles.images }} src={CPPIcon} />
+              <img style={{ ...styles.images }} src={JSIcon} />
+              <img style={{ ...styles.images }} src={JavaIcon} />
+            </Carousel>
+          </div>
         </div>
+        
         <div
           style={{
-            marginBottom: '50px',
+            paddingBottom: '50px',
           }}
         ></div>
       </div>
@@ -104,7 +131,7 @@ const styles = {
     margin: '0 0 0 0',
     paddingTop: '10px',
     fontSize: '2rem',
-    color: '#777777',
+    color: '#691917',
     textAlign: 'left',
     fontWeight: '550',
   },
@@ -113,10 +140,11 @@ const styles = {
     justifyContent: 'center',
     width: '75%',
     margin: '0 auto',
+    paddingTop: '30px',
   },
 
   block: {
-    backgroundColor: '#FFA600',
+    backgroundColor: '#bd5954',
     borderRadius: '15px 15px',
     margin: '0 0 0 0',
     width: '75px',
@@ -124,13 +152,12 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'relative',
+    position: 'relative', //change to sticky once I figurre out
     //how to change the circles to sticky too
     top: '0px',
   },
   images: {
     height: '100px',
-    width: '100px',
     marginBottom: '20px',
   },
 };
